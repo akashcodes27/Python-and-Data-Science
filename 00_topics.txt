@@ -1,0 +1,89 @@
+Python Collections:
+
+1. list: ordered, mutable
+2. tuples: ordered, immutable
+3. sets: unordered, immutable
+
+
+
+Slicing list:
+list1 = [11,22,33,44,55,66,77,88,99]
+list1[0:4] , list1[2:5], list1[3:6]
+
+
+last element:
+list1[:-1]
+
+reverse list: list1[::-1]
+
+skipping few elements; list1[::2] : considers every 2nd element 
+
+List functions:
+append(), extend(), insert(), pop(), remove(), upper(), lower(), index(), count(), clear(), split()
+
+
+Types of for loops:
+Basic:  for fruit in fruits: 
+Range:  for num in range(value)
+Enumerate:  for index, fruit in enumerate(fruits):   extracts index as well as contents
+f"":  f string literals, used to embedd expressions with variables in print statements 
+
+
+List Comprehension: Consize way of creating lists 
+Format:  [expression for val in iterable if condition]
+
+Functions used in general with for loop:
+range(), enumerate()
+
+
+--------------------------------------------------------------------------------------
+
+STACKS in PYTHON:
+
+Stacks in python are implemented using LISTS. Stacks follow the principle LIFO (Last In First Out)
+
+in Stacks, Insert and Remove both happen on right 
+
+LISTS in python are dynamic arrays, and under the hood, the insert and remove operations have 
+O(1) time complexity 
+
+stack1 = []
+
+To push to top of stack: stack1.append(12)
+To pop from stack:       stack1.pop()
+To peek in a stack:      stack1[:-1]     (shows last element of list, which is now stack)
+
+Wkat kind of questions use stack Eg: Parenthesis Questions. 
+In questions where sequence matters : Easy Leetcode: Vaid Parenthesis
+
+
+-------------------------------------------------------------------------------------
+
+
+QUEUES in python:  2 VIP terms: Enqueue, Dequeue
+
+In QUEUE, Insert happens on right, remove happens on left
+
+Queues are implemented using the "deque" from python collections framework 
+
+from collections import deque 
+queue1 = deque()
+
+TO ADD ELEMENT:
+queue1.append(45)
+
+
+TO REMOVE ELEMENT:
+queue1.popleft(12)
+
+We dont use normal list, because pop(0) operation is O(n)
+
+
+
+
+
+
+
+
+
+

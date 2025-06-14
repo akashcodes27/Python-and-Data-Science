@@ -1,0 +1,44 @@
+
+HASHTABLES:
+Hash functions, sets, maps 
+
+Python's dictionaries are built-in implementations of hash tables 
+example dictionary:
+
+dict1 = {
+    "student1":89,
+    "student2":92,
+    "student3":78,
+    "student4":69,
+    "student5":80
+}
+
+
+dir(dict1) : the dir function gives all the available methods for dictionaries 
+
+other dict functions:
+dict1.keys(), dict1.values(), dict1.items(), update(), pop(), popitem(), clear(), copy()
+
+for key in dict1.keys() 
+for value in dict1.values()
+for key, value in dict.items()
+pop("student1") 
+update({"student7":99})
+
+
+
+Dictionary Comprehension: Way of creating consize dictionraies 
+format: {key:value for key,value in iterable if condition}
+
+dict2 = {name:score for name, score in dict1.items() if score>80}
+
+
+
+
+
+
+
+
+
+
+
