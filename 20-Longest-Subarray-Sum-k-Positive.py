@@ -25,7 +25,10 @@ def longest_subarray_func(nums, k):
             CurSum -= nums[left]
 
         if CurSum == k:
+            max_len = max(max_len, right-left+1)
 
+
+    return max_len
 
 
 
