@@ -29,6 +29,8 @@ Enumerate:  for index, fruit in enumerate(fruits):   extracts index as well as c
 f"":  f string literals, used to embedd expressions with variables in print statements 
 
 
+
+
 List Comprehension: Consize way of creating lists 
 Format:  [expression for val in iterable if condition]
 
