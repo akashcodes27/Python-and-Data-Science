@@ -21,10 +21,11 @@ What do you mean by Functional Programming: Functional Programming is a concept 
 
 Lets now take a look at some libraries and frameworks of python
 
-1. NumPy: Full Form (Numerical Python) is a core python library that provides tools and functions for performing highly complex mathematical and scientific calculations and computations. 
+1. NumPy: Full Form (Numerical Python) is a core python library that provides tools and functions for performing highly complex mathematical and scientific calculations and computations. Numpy library in python provides certain specialized data structures which are Numpy's core feature like there "ndarrays" or there Multi-Dimensional Arrays" which make possible fast numeric arrays (make data procrocessing highly effecient)
 GO IN DEPTH ABOUT WHAT TOOLS IT PROVIDES AND TRY THEM OUT ON GOOGLE COLLAB 
 
-2. Pandas: Pandas is also a python library, however it is built on top of NumPy. It is utilized mainly for tasks like data exploration, data manipulation and analysis of large structured datasets(Datasets containing rows and columns) 
+2. Pandas: Pandas is also a python library, however it is built on top of NumPy. It is utilized mainly for tasks like data exploration, data manipulation, data tranformations and analysis of large structured datasets(Datasets containing rows and columns) 
+GO IN DEPTH ABOUT WHAT FUNCTIONS ARE USED IN PANDAS, AND WHEN THEY ARE USED, HOW THEY ARE USED, TRY TESTING IT OUT ON GOOGLE COLLAB 
 
 
 
