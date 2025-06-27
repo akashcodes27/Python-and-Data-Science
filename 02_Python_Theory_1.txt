@@ -11,6 +11,8 @@ What does this mean: Python is a language that allows software developers, engin
 Python is also Object-Oriented in nature:
 What is object-oriented programming: Object-Oriented Programming refers to a concept where we solve complex logical problems by leveraging and utilizing real-world entity relationships. In practical terms, it basically provides us with a blueprint which is defined as class, and this blueprint defines certain characteristics(encapsulates certain members) in the form of methods and data members(functions and variables). Object-Oriented programming lets us create unique and multiple objects of such class blueprints. This approach lets us solve complex real world issues in a logical manner. It promotes code reuseability through concepts like inheritance. it lets us define logical relationships between different classes and objects that model real world object relationships.
 
+Python implements Functional Programming:
+What do you mean by Functional Programming: Functional Programming is a concept of solving logical problems using modular entities known as functions. Programming solutions for complex logical problems by feeding inputs into the right functions and generating the desired outputs.
 
 
 
