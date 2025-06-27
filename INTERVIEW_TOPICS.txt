@@ -1,0 +1,216 @@
+
+
+
+Different Scikit Learn Built-in Machine Learning Models: 
+
+
+
+
+Different types of Evaluation metrics:
+Classification: (Accuracy, Precision, Recall, f1-score) //we use classification_report from sklearn.metrics for finding these 
+Regression: (MSE, MAE, RMSE)
+
+
+
+Scikit Learn ML Workflow:
+1. Getting the data Ready 
+2. Choosing the right Estimator/Algorithm for our problem 
+3. Fit the model/algorithm with the data and use it to make predictions on unseen data 
+4. Evaluate how model performs 
+5. Improve the model
+6. Save and load the trained model 
+
+
+
+import numpy as np 
+import pandas as pd 
+
+heart_disease = pd.read_csv("data.csv")
+
+X = heart_disease.drop("target", axis=1)
+y = heart_disease["target"]
+
+from sklearn.ensemble import RandomForestClassifier
+model1 = RandomForestClassifier()
+
+//So we have our data ready and our model initialized 
+
+Now lets split the data into training and testing data 
+
+from sklearn.model_selection import train_test_split 
+
+X_train,X_test ,y_train, y_test = train_test_split(X, y, test_size=0.2)
+//80% of data will be used for training and 20% data will be used for testing 
+
+model1.fit(X_train, y_train)  //we are teaching model how input-output looks like, model will evaluate relation between X and y training data  
+
+
+
+//After we train, we shall evaluate how are model performed  
+
+y_preds = model1.predict(X_test)  //this helps us see what was predicted but we cant exactly measure the prediction 
+
+model1.score(X_test, y_test): this gives us a value which allows us to know how accurately the predictions happened
+
+
+//We also have a bunch of different evaluation metrics to understand our predictions better
+
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score 
+
+classification_report(y_test, y_preds)   (comparing what was expected and what was actually predicted)
+confusion_matrix(y_test, y_preds)  (comparing through visualizing)
+
+
+
+
+
+
+
+PySpark:
+
+Whenever we are working with pyspark, we must start a spark session 
+
+import pyspark 
+
+from pyspark.sql import SparkSession 
+
+//lets create a spark instance 
+
+spark = SparkSession.builder.appName('Practice1).getOrCreate()
+
+
+We can read the dataset in 2 different ways: 
+df_pyspark = spark.read.csv("test1.csv")   //1st way 
+
+//our data may contain both, string as well as integer values, but by default, every value will be considered as string 
+//header True ensures that names of columns are retained, and dont end up becoming c0, c1 
+
+df_pyspark = spark.read.csv("csvname", header=True, inferSchema=True)
+
+
+
+df_pyspark.show(): displays the dataset 
+df_pyspark.printSchema(): displays the datatype of all attributes 
+df_pyspark.dtypes(): displays the datatype of all attributes 
+df_pyspark.head(3):  displays top 3 records 
+df_pyspark.columns: displays all columns of dataset 
+df_pyspark.select('columnName').show():  displays all rows of specified column 
+df_pyspark.select(['columnName1', 'columnName2']).show():  displays all rows of specified columns 
+
+df_pyspark.withColumn("ColumnName", ColumnValue) : Adds a new column with specified name and values with given condition 
+df_pyspark.withColumn("Experience after 2 year", df["Experience"]+2) 
+df_pyspark.drop('columnName'): drops the specified column from the dataset 
+df_highperformers = df_pyspark.filter(df["tasks_completed"] > 10):  filters and gets rid of entries with less than 10 values
+
+df_highperformers.groubBy("Dept").avg("scores")
+
+what is df_pyspark?  Is it dataset, NO, csv file was a dataset, what we have here is known as a "dataframe"
+
+
+What Happens When You Import pyspark and Start a SparkSession:
+Spark Engine Is Initialized:
+When you run something like this in your Jupyter notebook:
+
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName("MyApp").getOrCreate()
+
+You are starting a Spark application. This actually launches a Java Virtual Machine (JVM) process in the background, which is the core Spark engine.
+
+Cluster Mode vs. Local Mode:
+
+If you're working locally (default in Jupyter), Spark will use multiple cores on your laptop to parallelize data processing.
+If Spark is connected to a cluster manager (like YARN, Mesos, or Kubernetes), it will distribute workloads across many machines in a cluster.
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+1. Predictive Analytics with scikit-learn
+“During my internship at Alpha Labs, once I had built the Intern Management System, I became curious about how we could use the intern data for decision-making. So I created a small sample dataset with dummy values — things like intern attendance, task completion rate, and feedback scores.
+
+I used this to experiment with scikit-learn by building a simple classification model. The idea was to see if I could predict whether an intern was likely to complete the internship successfully or drop out. I tried out basic models like Logistic Regression and used standard steps like data cleaning, splitting into train/test sets, and calculating accuracy.
+
+This wasn’t a production feature — it was more like a self-initiated mini project to explore how ML models fit into the kind of data I was already working with. It helped me understand how input features affect predictions and gave me early hands-on experience with model training and evaluation.”
+------------------------------------------------------------------------------------------------------------------------------
+🔹 2. PySpark for Data Transformation (Simulated)
+“Another thing I was interested in was how the system might scale if we had hundreds or thousands of interns across departments. So I took the intern dataset I had and ran it through PySpark locally on my laptop using Spark DataFrames.
+
+I replicated some of the same SQL operations I had already written — like filtering interns based on performance, aggregating scores, or joining with department info — but this time using PySpark syntax.
+
+Doing this helped me understand the difference between traditional SQL and distributed data processing. I learned how Spark partitions data, how operations are done in parallel, and how lazy evaluation works. Even though I didn’t run it on a cluster, it gave me a solid foundation in how data pipelines can be built to handle scale, which is very relevant for large organizations.”
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+ML DEPLOYMENT PIPELINE 
+
+Tech Stack
+PySpark – Data ingestion & transformation
+
+scikit-learn / XGBoost – Model training & evaluation
+
+Flask API – Model serving
+
+AWS EC2 – Hosting the Flask API
+
+AWS S3 – Storing input/output or model artifacts  
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+basic logical flow of how i integrated YOLOv8 model into flask API(or Django API)
+XGBoost,
+Where you used pyspark, what other big data tools you explored 
+
+Data Mining, Data Warehousing, Big Data Management Tools, Machine Learning Models, Data Analysis Tools
+Numpy, Pandas, Matplotlib, Azure's Storage Mechanisms (Check Azure cert prep folder)
+
+
+Explore examples in CLASSIFICATION as well as REGRESSION PROBLEMS
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
+from xgboost import XGBClassifier
+model = XGBClassifier()
+model.fit(X_train, y_train)
+predictions = model.predict(X_test)
+
+
+
+customer churn prediction:
+Mention a source from where you found the big data. 
+Then explain entire workflow 
+from data collection to data modeling, model training,model selection, trying different models 
+generating results, generating metrics, 
+connecting/integrating with cloud based services, using tools like tableau for visualizing
+learn a bunch of different evaluation metrics and what they do 
+
+mention what cloud storage you integrated with, and also mention how then i used this hosted data for creating dashboards in tableau 
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+For this project, I aimed to build a complete end-to-end Customer Churn Prediction system, simulating how large organizations manage, analyze, and act on user behavior using big data. I started by sourcing a publicly available customer dataset that contained structured records such as customer ID, monthly charges, tenure, contract type, and whether the customer had churned. To simulate a big data scenario, I used Apache Spark with PySpark to ingest and process the data in a distributed environment, treating it as if it came from a high-volume customer management platform.
+
+The raw dataset was stored in Azure Blob Storage, a cloud-based object storage solution that supports storing large CSV and Parquet files at scale. I chose Azure Blob because of its seamless integration with Spark and Tableau, and because it supports scalable, cost-effective storage for unstructured data. Using PySpark, I read the dataset directly from the blob container and performed several preprocessing steps: removing missing values, converting data types, and engineering new features. For instance, I created a column called risk_score by combining usage and support call frequency, and flagged customers with very short tenures. I also encoded categorical variables like contract_type using StringIndexer to prepare them for machine learning models.
+
+Once the data was cleaned and transformed, I exported the final dataset as a Parquet file back to Azure Blob Storage and then loaded it into a local Jupyter environment using Pandas for model building. I trained multiple models including Logistic Regression, Decision Trees, and XGBoost, with XGBoost ultimately chosen due to its performance with imbalanced classes and its robustness. I tuned the model using GridSearchCV to find the best parameters for accuracy, and used techniques like feature importance plots to better understand what factors most contributed to customer churn.
+
+For model evaluation, I didn’t rely solely on accuracy; instead, I used a range of metrics including precision, recall, F1-score, and ROC-AUC to understand how well the model handled the churn vs non-churn class imbalance. These metrics provided a more realistic view of the model’s ability to catch true churners without producing excessive false alarms. The final model achieved a good balance between these metrics and was saved as a .pkl file using joblib.
+
+To simulate deployment, I wrapped the model inside a Flask API that accepted customer input as JSON and returned churn predictions. I deployed this API on an AWS EC2 instance, mimicking a production environment where other systems or dashboards could call the model service in real time. This helped me understand how machine learning models can be served and consumed in the cloud.
+
+Finally, to communicate the insights and predictions to stakeholders, I connected Tableau Desktop to an Azure SQL Database, where the final processed and scored dataset was uploaded. From Tableau, I built interactive dashboards that visualized churn patterns, such as churn likelihood by contract type, average tenure of churned users, and individual customer risk scores. These dashboards enabled decision-makers to understand key churn drivers and target high-risk customers proactively.
+
+This project gave me a comprehensive understanding of how real-world machine learning pipelines work — from data ingestion with PySpark, to cloud storage and model development, to deployment and visualization using tools like Flask, Azure, and Tableau. It helped me build both the technical and architectural intuition needed to work on data engineering and machine learning solutions at scale.
