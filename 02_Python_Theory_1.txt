@@ -5,6 +5,12 @@ What is Python:
 Python is a high level programming language first created in the year 1991
 
 Python is a Procedural Programming Language:
-What does this mean: Python is a language that allows software developers, engineers to use their resources, functions, packages, utilities to engineer solutions for logical problems in a step by step procedural manner. Just like how if we cook food, we write step wise recipe for cooking food. Just like that, Python allows us to write logical steps for solving a problem.  (basically enables us to define solution as a set of procedures to be followed).
+What does this mean: Python is a language that allows software developers, engineers to use their resources, functions, packages, utilities to engineer solutions for logical problems in a step by step procedural manner. Just like how if we cook food, we write step wise recipe for cooking food. Just like that, Python allows us to write logical steps for solving a problem.  (basically enables us to define solution as a set of procedures to be followed). It is a fundamental framework for programming style which is followed by most programming languages 
+
+
+Python is also Object-Oriented in nature:
+What is object-oriented programming: Object-Oriented Programming refers to a concept where we solve complex logical problems by leveraging and utilizing real-world entity relationships. In practical terms, it basically provides us with a blueprint which is defined as class, and this blueprint defines certain characteristics(encapsulates certain members) in the form of methods and data members(functions and variables). Object-Oriented programming lets us create unique and multiple objects of such class blueprints. This approach lets us solve complex real world issues in a logical manner. It promotes code reuseability through concepts like inheritance. it lets us define logical relationships between different classes and objects that model real world object relationships.
+
+
 
 
