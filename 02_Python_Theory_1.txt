@@ -1,4 +1,10 @@
 
+What is Python:
 
+
+Python is a high level programming language first created in the year 1991
+
+Python is a Procedural Programming Language:
+What does this mean: Python is a language that allows software developers, engineers to use their resources, functions, packages, utilities to engineer solutions for logical problems in a step by step procedural manner. Just like how if we cook food, we write step wise recipe for cooking food. Just like that, Python allows us to write logical steps for solving a problem.  (basically enables us to define solution as a set of procedures to be followed).
 
 
