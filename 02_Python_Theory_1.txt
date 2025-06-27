@@ -12,7 +12,10 @@ Python is also Object-Oriented in nature:
 What is object-oriented programming: Object-Oriented Programming refers to a concept where we solve complex logical problems by leveraging and utilizing real-world entity relationships. In practical terms, it basically provides us with a blueprint which is defined as class, and this blueprint defines certain characteristics(encapsulates certain members) in the form of methods and data members(functions and variables). Object-Oriented programming lets us create unique and multiple objects of such class blueprints. This approach lets us solve complex real world issues in a logical manner. It promotes code reuseability through concepts like inheritance. it lets us define logical relationships between different classes and objects that model real world object relationships.
 
 Python implements Functional Programming:
-What do you mean by Functional Programming: Functional Programming is a concept of solving logical problems using modular entities known as functions. Programming solutions for complex logical problems by feeding inputs into the right functions and generating the desired outputs.
+What do you mean by Functional Programming: Functional Programming is a concept of solving logical problems using modular entities known as functions. Programming solutions for complex logical problems by feeding inputs into the right functions and generating the desired outputs. Designing solutions that we can define as a combination of modular end to end functions that need not be changed, manipulated. Three characteristics of Functional Programming: 
+1. No Side Effects: The functions mind their own business, they dont change any global variables or any outside variables that do not belong to the function
+2. Treat Functions as First-Class Citizens: This means we treat functions just like how we would treat any other variables, or objects or data structures in python.
+3. Treat variables as immutable objects 
 
 
 
