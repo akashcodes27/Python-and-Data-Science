@@ -19,3 +19,7 @@ What do you mean by Functional Programming: Functional Programming is a concept 
 
 
 
+Lets now take a look at some libraries and frameworks of python
+
+
+
