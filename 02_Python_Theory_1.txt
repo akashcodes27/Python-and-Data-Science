@@ -27,5 +27,9 @@ GO IN DEPTH ABOUT WHAT TOOLS IT PROVIDES AND TRY THEM OUT ON GOOGLE COLLAB
 2. Pandas: Pandas is also a python library, however it is built on top of NumPy. It is utilized mainly for tasks like data exploration, data manipulation, data tranformations and analysis of large structured datasets(Datasets containing rows and columns) 
 GO IN DEPTH ABOUT WHAT FUNCTIONS ARE USED IN PANDAS, AND WHEN THEY ARE USED, HOW THEY ARE USED, TRY TESTING IT OUT ON GOOGLE COLLAB 
 
+3. Matplotlib: Matplotlib is a python library which is ued for creating highly customizable high quality data visualizations in the form of plots, figures , line graphs, pie charts, bar graph, scatter plots, heat maps etc. 
+
+
+
 
 
