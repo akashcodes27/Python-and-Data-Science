@@ -40,3 +40,8 @@ print(df2.columns)
 
 df2.index 
 print(df2.index)    #Gives us the range of index values from start to end of data 
+
+# One thing we must closely observe is that "index" and "columns" and "dtypes" are not functions, they are attributes 
+
+print(df2)
+print(df2.describe())   #Describe: Describe function gives us some statistical information about the numerical columns of the data 
