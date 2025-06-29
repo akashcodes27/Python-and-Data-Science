@@ -56,3 +56,16 @@ print(df2.info())  #Info gives us range if index values and the datatypes of all
 print(df2.mean(numeric_only=True))  #We need to explicitely mention numeric_only=True 
 
 print(df2.sum())   #Takes the sum, for string (or Object dtype) it simply concatenates 
+
+s2 = pd.Series([200, 250, 190, 178, 340, 290])
+print("Printing Series info")
+print(s2.mean())
+print(s2.sum())
+
+
+#Lets say if instead of finding statistical information of the entire dataframe, if we only want statistical information of a specific column in the dataset, then we do the following:
+print("Printing statistical information of specific columns of the dataframe instead of entire dataframe ")
+print(df2["Odometer (KM)"].mean())
+print(df2["Doors"].mean())
+print(df2["Doors"].sum())
+print(df2["Odometer (KM)"].mean())
