@@ -45,3 +45,9 @@ print(df2.index)    #Gives us the range of index values from start to end of dat
 
 print(df2)
 print(df2.describe())   #Describe: Describe function gives us some statistical information about the numerical columns of the data 
+
+
+print(df2.info())  #Info gives us range if index values and the datatypes of all columns 
+
+#One thing to note is that we can see, only "Doors" and "Odometer" are shown as int64. Other columns datatypes is Object. 
+#Hence all numeric operations are only happening on the integer columns from the data we have 
