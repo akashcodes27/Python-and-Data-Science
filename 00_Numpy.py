@@ -29,4 +29,6 @@ df1 = pd.DataFrame({ "Brand":s1, "Color":s2, "Year":s3})
 
 df2 = pd.read_csv("car-sales (1).csv")
 
-print(df2)
+# print(df2) 
+
+print(df2.dtypes)
