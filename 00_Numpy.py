@@ -54,3 +54,5 @@ print(df2.info())  #Info gives us range if index values and the datatypes of all
 
 
 print(df2.mean(numeric_only=True))  #We need to explicitely mention numeric_only=True 
+
+print(df2.sum())   #Takes the sum, for string (or Object dtype) it simply concatenates 
