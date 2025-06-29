@@ -51,3 +51,6 @@ print(df2.info())  #Info gives us range if index values and the datatypes of all
 
 #One thing to note is that we can see, only "Doors" and "Odometer" are shown as int64. Other columns datatypes is Object. 
 #Hence all numeric operations are only happening on the integer columns from the data we have 
+
+
+print(df2.mean(numeric_only=True))  #We need to explicitely mention numeric_only=True 
