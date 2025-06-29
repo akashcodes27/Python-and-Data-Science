@@ -24,6 +24,9 @@ s3 = pd.Series(["2020", "2018", "2024", "2017", "2019"])
 
 df1 = pd.DataFrame({ "Brand":s1, "Color":s2, "Year":s3})
 
-print(df1)
+# print(df1)
 
 
+df2 = pd.read_csv("car-sales (1).csv")
+
+print(df2)
