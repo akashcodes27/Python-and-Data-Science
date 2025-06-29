@@ -31,4 +31,12 @@ df2 = pd.read_csv("car-sales (1).csv")
 
 # print(df2) 
 
-print(df2.dtypes)
+df2.dtypes    #Shows datatypes of all columns
+# print(df2.dtypes)
+
+
+df2.columns   #Displays all the columns in the dataframe 
+print(df2.columns)
+
+df2.index 
+print(df2.index)    #Gives us the range of index values from start to end of data 
