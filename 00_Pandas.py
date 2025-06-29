@@ -69,3 +69,14 @@ print(df2["Odometer (KM)"].mean())
 print(df2["Doors"].mean())
 print(df2["Doors"].sum())
 print(df2["Odometer (KM)"].mean())
+
+print(len(df2))  #To retrieve the length of the dataframe (Basically total number of columns)
+
+print(df2.head())   #Displays first 5 rows of the dataframe
+print(df2.tail())   #Displays the last 5 rows of the dataframe 
+
+
+print(df2)
+print(df2.loc[5])
+print(df2.loc[2])
+print(df2.loc[9])
