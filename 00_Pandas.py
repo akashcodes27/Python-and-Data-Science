@@ -105,3 +105,8 @@ print(df2)
 # Lets say we want to group by "Make" and want to find Odometer average reading for every make
 
 print(df2.groupby("Make")["Odometer (KM)"].mean())
+# In this case we have specified explicitely the column that we want to "GroupBy" and the Column that we wanna Aggregate
+
+
+print(df2.groupby(["Make"]).mean())
+# Here we mention the column that we wanna groupby but not the column that we wanna aggregate, so it aggregates all numeric columns
