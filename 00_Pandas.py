@@ -77,6 +77,31 @@ print(df2.tail())   #Displays the last 5 rows of the dataframe
 
 
 print(df2)
-print(df2.loc[5])
+print(df2.loc[5])   #loc basically gives us the row that is stored inside the specified index value 
 print(df2.loc[2])
 print(df2.loc[9])
+
+print(df2.iloc[5])
+print(df2.iloc[2])
+
+print(df2.head(4))    #Both accomplish same results
+print(df2.iloc[:4])
+
+print(df2.iloc[2:7])  #Returns results by slicing to the specified range 
+
+print(df2["Make"])
+
+
+print(df2[df2["Make"] == "Toyota"])  #Similar to how we impose the WHERE clause in SQL 
+print(df2[df2["Make"] == "Nissan"])
+print(df2[df2["Odometer (KM)"] > 100000])
+
+
+print(df2)
+print(pd.crosstab(df2["Price"], df2["Doors"]))
+
+print(df2)
+
+# Lets say we want to group by "Make" and want to find Odometer average reading for every make
+
+print(df2.groupby("Make")["Odometer (KM)"].mean())
