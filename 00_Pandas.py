@@ -129,4 +129,13 @@ df2["Price"] = df2["Price"].astype(float).astype(int)
 
 print(df2)
 
-print(df2.groupby(["Make"]).mean())   
+# str.replace() was one of the many data manipulation functions. There are more data manipulation functions out there. We shall take a look 
+
+# Anything that you can do on strings in python, you can do all those operations on columns in pandas 
+
+df2["Make"] = df2["Make"].str.lower()
+print(df2)
+
+df2["Colour"] = df2["Colour"].str.upper()
+
+print(df2)
