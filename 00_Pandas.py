@@ -100,6 +100,7 @@ print(df2[df2["Odometer (KM)"] > 100000])
 print(df2)
 print(pd.crosstab(df2["Price"], df2["Doors"]))
 
+
 print(df2)
 
 # Lets say we want to group by "Make" and want to find Odometer average reading for every make
@@ -108,5 +109,24 @@ print(df2.groupby("Make")["Odometer (KM)"].mean())
 # In this case we have specified explicitely the column that we want to "GroupBy" and the Column that we wanna Aggregate
 
 
-print(df2.groupby(["Make"]).mean())
+print(df2.groupby(["Make"]).mean(numeric_only=True))
 # Here we mention the column that we wanna groupby but not the column that we wanna aggregate, so it aggregates all numeric columns
+
+print(df2)
+
+print(pd.crosstab(df2["Make"], df2["Doors"]))
+# So what does crosstab do? Crosstab allows us to compare 2 columns on 2 axis (x and y), and the corresponding values in the table denote the frequency values. Eg: Against Colour=Red, Make="Honda", there will be a number like 2 which denotes that there exist 2 rows or cars with Make=Honda and Colour=Red 
+
+print(df2)
+
+
+# This is how we converted the string price into a numeric price
+# We first got rid of the "$", then we got rid of  ","
+# Then we converted to float, then we converted to int 
+df2["Price"] = df2["Price"].str.replace("$", "", regex=False)
+df2["Price"] = df2["Price"].str.replace(",", "", regex=False)
+df2["Price"] = df2["Price"].astype(float).astype(int)
+
+print(df2)
+
+print(df2.groupby(["Make"]).mean())   
