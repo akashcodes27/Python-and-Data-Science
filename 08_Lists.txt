@@ -1,0 +1,24 @@
+Nested Lists
+A nested list is simply a list inside another list.
+Example:
+
+L = [1, 2, [3, 4, [5, 6]], 7]
+
+
+
+✅ Accessing elements in nested lists:
+L[2]          # [3, 4, [5, 6]]
+L[2][0]       # 3
+L[2][2]       # [5, 6]
+L[2][2][1]    # 6
+
+
+✅ Negative index with nested:
+L[-2][-1][-1]  # 6
+
+
+
+
+✅ Modifying nested lists:
+L[2][1] = 40
+# L becomes [1, 2, [3, 40, [5, 6]], 7]
