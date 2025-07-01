@@ -1,0 +1,8 @@
+L = [1, 2, 3]
+L.append(4)        # [1, 2, 3, 4]
+L.insert(1, 10)    # [1, 10, 2, 3, 4]
+L.extend([5,6])    # [1, 10, 2, 3, 4, 5, 6]
+L.pop()            # removes 6
+L.remove(10)       # removes first 10
+L.sort()           # [1,2,3,4,5]
+L.reverse()        # [5,4,3,2,1]
