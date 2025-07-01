@@ -9,3 +9,18 @@ d1 = {
 
 ✅ Using dict() constructor:
 d2 = dict(name="Bob", age=25)
+
+
+
+
+
+
+Accessing Dictionary Elements
+✅ Using brackets:
+d1["name"]  # "Alice"
+
+
+
+✅ Using get():
+d1.get("age")           # 30
+d1.get("salary", 0)     # 0 (default)
