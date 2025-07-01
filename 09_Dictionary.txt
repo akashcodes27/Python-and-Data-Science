@@ -1,0 +1,11 @@
+Creating Dictionaries
+✅ Using literals:
+d1 = {
+    "name": "Alice",
+    "age": 30,
+    "city": "Toronto"
+}
+
+
+✅ Using dict() constructor:
+d2 = dict(name="Bob", age=25)
