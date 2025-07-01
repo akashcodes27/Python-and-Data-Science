@@ -28,3 +28,68 @@ s[-6:-2]   # 'Pyth'
 s = "Python"
 s[1:-1]    # 'ytho'
 s[-5:5]    # 'ytho'
+
+
+
+For the string s = "python", the slice s[::2] extracts characters with a step size of 2, starting from the beginning to the end. Here's how it works:
+
+Step-by-Step Explanation
+Syntax: s[start:stop:step]
+
+start is omitted (defaults to 0)
+
+stop is omitted (defaults to end of string)
+
+step = 2 (select every 2nd character)
+
+Indices and Characters:
+
+text
+Index:   0   1   2   3   4   5
+Char:    p   y   t   h   o   n
+Execution:
+
+Start at 0 ('p')
+
+Next: 0 + 2 = 2 ('t')
+
+Next: 2 + 2 = 4 ('o')
+
+Next: 4 + 2 = 6 (out of bounds, stops)
+
+Result: Characters at indices 0, 2, 4 → 'p', 't', 'o'
+
+Output
+python
+s = "python"
+print(s[::2])  # Output: 'pto'
+Key Points
+Purpose: Skips every alternate character.
+
+Works for: Any sequence (strings, lists, tuples).
+
+Edge Cases:
+
+If s = "p", returns "p".
+
+If s = "", returns "".
+
+
+
+
+
+
+Reverse Version (s[::-2])
+To step backward:
+
+python
+print(s[::-2])  # Starts from end, step=-2 → 'nhy'
+
+
+
+
+
+
+
+
+
