@@ -139,3 +139,16 @@ print(df2)
 df2["Colour"] = df2["Colour"].str.upper()
 
 print(df2)
+
+
+df3 = pd.read_csv("car-sales-missing-data.csv")
+
+print(df3)
+
+df3["Odometer"] = df3["Odometer"].fillna(df3["Odometer"].mean())
+
+print(df3)
+
+df3["Make"] = df3["Make"].str.upper()
+
+print(df3)
