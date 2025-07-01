@@ -1,0 +1,30 @@
+Let's break down the slicing operation s[-4:-1] step by step for the string s = "python".
+
+1. Understand the String and Indices
+First, let's see the string with both positive and negative indices:
+
+text
+Character: p  y  t  h  o  n
+Index:     0  1  2  3  4  5   (Positive indices)
+Index:    -6 -5 -4 -3 -2 -1   (Negative indices)
+
+
+
+→ Front slicing (positive indices):
+s = "Python"
+s[1:4]    # 'yth'
+s[:3]     # 'Pyt'
+s[2:]     # 'thon'
+
+
+→ Back slicing (negative indices):
+s = "Python"
+s[-4:-1]   # 'tho'
+s[-6:-2]   # 'Pyth'
+
+
+
+→ Mixed slicing (positive + negative):
+s = "Python"
+s[1:-1]    # 'ytho'
+s[-5:5]    # 'ytho'
