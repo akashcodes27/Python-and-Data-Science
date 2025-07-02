@@ -33,3 +33,10 @@ Access keys, values, items:
 d1.keys()     # dict_keys(['name', 'age', 'city'])
 d1.values()   # dict_values(['Alice', 30, 'Toronto'])
 d1.items()    # dict_items([('name', 'Alice'), ('age', 30), ('city', 'Toronto')])
+
+
+
+
+(How to add new key-value pairs or update the existing key-value paires )
+Using update():
+d1.update({"name": "Charlie", "zip": "N9B3P4"})

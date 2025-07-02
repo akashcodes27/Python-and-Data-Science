@@ -1,0 +1,102 @@
+1️⃣ Question:
+Get all books with price less than $20.
+
+✅ Answer:
+
+Book.objects.filter(price__lt=20)
+
+
+2️⃣ Question:
+Get the book with id=5.
+
+✅ Answer:
+Book.objects.get(id=5)
+
+
+
+3️⃣ Question:
+Get all books published after 2022.
+
+✅ Answer:
+Book.objects.filter(published_date__year__gt=2022)
+
+
+
+4️⃣ Question:
+Get all books whose title contains “Python” (case-insensitive).
+
+✅ Answer:
+Book.objects.filter(title__icontains="Python")
+
+
+
+
+5️⃣ Question:
+Get all books by an author named “John Smith”.
+
+✅ Answer:
+Book.objects.filter(author="John Smith")
+
+
+
+6️⃣ Question:
+Count how many books exist in the database.
+
+✅ Answer:
+Book.objects.count()
+
+
+
+7️⃣ Question:
+Order all books by published_date ascending.
+
+✅ Answer:
+Book.objects.order_by('published_date')
+
+
+
+8️⃣ Question:
+Order all books by price descending, and get only the top 3.
+
+✅ Answer:
+Book.objects.order_by('-price')[:3]
+
+
+
+9️⃣ Question:
+Check if there are any books with price greater than $50.
+
+✅ Answer:
+Book.objects.filter(price__gt=50).exists()
+
+
+
+🔟 Question:
+Get the first book in the table by id.
+
+✅ Answer:
+Book.objects.order_by('id').first()
+
+
+
+1️⃣1️⃣ Question:
+Get all books, excluding those with price exactly 0.
+
+✅ Answer:
+Book.objects.exclude(price=0)
+
+
+
+1️⃣2️⃣ Question:
+Delete all books priced under $5.
+
+✅ Answer:
+Book.objects.filter(price__lt=5).delete()
+
+
+
+1️⃣3️⃣ Question:
+Update the price of all books whose price is currently 10, to 12.
+
+✅ Answer:
+Book.objects.filter(price=10).update(price=12)
