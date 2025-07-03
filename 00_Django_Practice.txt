@@ -20,7 +20,7 @@ Get all books published after 2022.
 ✅ Answer:
 Book.objects.filter(published_date__year__gt=2022)
 
-
+   
 
 4️⃣ Question:
 Get all books whose title contains “Python” (case-insensitive).
