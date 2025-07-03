@@ -104,6 +104,9 @@ print(df2[df2["Odometer (KM)"] > 100000])
 ✅ df2["Make"] == "Toyota" creates a Boolean Series — it will be True wherever the “Make” column has the value "Toyota" and False elsewhere.
 ✅ df2[ <boolean series> ] uses Boolean indexing to filter only those rows where the condition is True. '''
 
+# So basically if we have a df["columnName"] with us, and if we want to apply a filter to it to only retrieve entries from that specific column that satisfy a condition then we use the concept of Boolean Series and Boolean Indexing 
+# df["Make"] == "Toyota" is a boolean series which implies a specific condition 
+# df[ df["Make"] == "Toyota" ] is a boolean indexing method which applies the filter to the column 
 
 print(df2)
 print(pd.crosstab(df2["Price"], df2["Doors"]))
