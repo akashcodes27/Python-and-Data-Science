@@ -97,6 +97,14 @@ print(df2[df2["Make"] == "Nissan"])
 print(df2[df2["Odometer (KM)"] > 100000])
 
 
+'''This is a Pandas operation, where:
+
+✅ df2 is a pandas DataFrame.
+✅ df2["Make"] selects the “Make” column from the DataFrame.
+✅ df2["Make"] == "Toyota" creates a Boolean Series — it will be True wherever the “Make” column has the value "Toyota" and False elsewhere.
+✅ df2[ <boolean series> ] uses Boolean indexing to filter only those rows where the condition is True. '''
+
+
 print(df2)
 print(pd.crosstab(df2["Price"], df2["Doors"]))
 
