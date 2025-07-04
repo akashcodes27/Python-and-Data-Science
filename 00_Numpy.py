@@ -46,5 +46,10 @@ print(a2)
 
 
 # Creating an ndarray by specifying start, stop and step(gaps)
+# But this only creates vectors (1-D numpy arrays)
 a3 = np.arange(2, 20, 2)
 print(a3)
+
+# We will now find out how we can generate 2-D numpy arrays by specifying start, stop, rows, columns
+a4 = np.random.randint(0, 30, size=(4,5))
+print(a4)
