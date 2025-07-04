@@ -237,3 +237,24 @@ dict1 = {
 
 df1 = pd.DataFrame(dict1)
 print(df1)
+
+# 2. List of dictionaries
+
+list1 = [
+    {
+        "Name":"Akash",
+        "Age": 23
+    }, 
+    {
+        "Name":"Aayush",
+        "Age":29
+    },
+    {
+        "Name":"Tushar",
+        "Age":30
+    }
+]
+
+df1 = pd.DataFrame(list1)
+
+print(df1)
