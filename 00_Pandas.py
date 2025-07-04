@@ -222,3 +222,18 @@ print(df2)
 df2["Price_after_tax"] = df2["Price"].apply(lambda x: x * 1.10)
 
 print(df2)
+
+
+
+# Different ways of creating dataframes in pandas
+
+# 1. Dictionary of Lists
+
+dict1 = {
+    "Brand":["Honda", "Toyota", "Mazda", "Hyundai", "Ford", "Lexus", "Dodge"],
+    "Price":[9000, 10000, 20000, 8999, 6999, 13000, 18000],
+    "Mileage": [10, 9, 7, 12, 15, 8, 11]
+}
+
+df1 = pd.DataFrame(dict1)
+print(df1)
