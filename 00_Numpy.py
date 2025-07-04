@@ -7,7 +7,7 @@ print(a1)
 
 
 # 2-D array 
-a2 = np.array([[1,2,3,4,5],[11,22,33,44,55],[10, 20, 30, 40, 50]])
+a2 = np.array([[1,2,3,4,5],[11,22,33,44,55],[10.1, 20, 30, 40, 50]])
 print(a2)
 
 
@@ -24,3 +24,13 @@ print(a1.ndim)
 
 # Gives us the number of dimensions in the a2 matrix 
 print(a2.ndim)
+
+
+# Tells us the datatype
+print(a1.dtype)
+print(a2.dtype)
+
+
+# Tells us the datastructure, which is obviously the ndarray 
+print(type(a1))
+print(type(a2))
