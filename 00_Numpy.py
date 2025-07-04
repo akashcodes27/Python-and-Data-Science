@@ -47,9 +47,24 @@ print(a2)
 
 # Creating an ndarray by specifying start, stop and step(gaps)
 # But this only creates vectors (1-D numpy arrays)
+# Format: start, stop, step
 a3 = np.arange(2, 20, 2)
 print(a3)
 
 # We will now find out how we can generate 2-D numpy arrays by specifying start, stop, rows, columns
+# Format: start, stop, size
 a4 = np.random.randint(0, 30, size=(4,5))
 print(a4)
+
+
+# We can also generate a random 2-D numpy array of this format [0.0, 1.0) of float values
+# We also specify the size which is basically rows and columns, and all values in this array will be between 0.0 and 1.0
+
+random_arr = np.random.random((3, 6))
+print(random_arr)
+
+
+# All random numpy arrays we looked at so far:
+# np.arange(start, stop, step): creates 1-D arrays
+# np.random.randint(start, stop, size=(rows, cols)):  creates 2-D arrays with size
+# np.random.random((rows, cols)): creates 2-D arrays within range [0.0, 1.0)
