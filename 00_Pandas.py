@@ -156,10 +156,13 @@ df3 = pd.read_csv("car-sales-missing-data.csv")
 
 print(df3)
 
-df3["Odometer"] = df3["Odometer"].fillna(df3["Odometer"].mean())
+# df3["Odometer"] = df3["Odometer"].fillna(df3["Odometer"].mean())
 
 print(df3)
 
 df3["Make"] = df3["Make"].str.upper()
 
+print(df3)
+
+df3.dropna(inplace=True)
 print(df3)
