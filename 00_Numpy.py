@@ -34,3 +34,12 @@ print(a2.dtype)
 # Tells us the datastructure, which is obviously the ndarray 
 print(type(a1))
 print(type(a2))
+
+#Creating an array of zeroes and ones
+# By default it uses float type for both ones and zeros
+
+a1 = np.ones((4,5))
+print(a1)
+
+a2 = np.zeros((3,7))
+print(a2)
