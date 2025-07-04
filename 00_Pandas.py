@@ -168,6 +168,9 @@ print(df3)
 # print(df3)
 
 
+# WAYS TO CREATE A COLUMN IN DATAFRAME
+
+
 # ASSIGNING SERIES TO DATAFRAME COLUMN
 # We can also assign Series to DataFrame column 
 # lets say we have 
@@ -186,8 +189,23 @@ print(df3)
 
 # ASSIGNING PYTHON LIST TO DATAFRAME COLUMN
 # We can also assign a python list to DataFrame Column
-fuel_economy = pd.Series([9.5, 8.4, 7.6, 10, 12])
+# Make sure length of list is same as length of dataframe column, when assigning list to dataframe column
+fuel_economy = pd.Series([9.5, 8.4, 7.6, 10, 12, 8.7, 4.7, 9, 10, 15])
 
 df3["Fuel Economy per 100KM"] = fuel_economy   
 
+print(df3)
+
+
+# CREATING A DATAFRAME FROM A SINGLE VALUE
+df3["Cylinders"] = 6
+
+print(df3)
+
+
+# Now lets see how we can change the order of the data. When we clean data to train machine learning models, we should change the order of the data sample to avoid any bias or overfitting. So we randomize the data 
+
+# Now lets randomize the data we have 
+print(df3)
+df3 = df3.sample(frac=1)
 print(df3)
