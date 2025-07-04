@@ -156,7 +156,7 @@ df3 = pd.read_csv("car-sales-missing-data.csv")
 
 print(df3)
 
-# df3["Odometer"] = df3["Odometer"].fillna(df3["Odometer"].mean())
+df3["Odometer"] = df3["Odometer"].fillna(df3["Odometer"].mean())
 
 print(df3)
 
@@ -164,5 +164,19 @@ df3["Make"] = df3["Make"].str.upper()
 
 print(df3)
 
-df3.dropna(inplace=True)
+# df3.dropna(inplace=True)
+# print(df3)
+
+
+# We can also assign Series to DataFrame column 
+# lets say we have 
+
+car_series = pd.Series([5,5,5,5,5,5])
+
+df3["New Column"] = car_series 
+
+print(df3)
+
+df3["New Column"].fillna(4, inplace=True)
+
 print(df3)
