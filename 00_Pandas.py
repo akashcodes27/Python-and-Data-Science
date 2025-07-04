@@ -258,3 +258,13 @@ list1 = [
 df1 = pd.DataFrame(list1)
 
 print(df1)
+
+
+
+# Creating Dataframes from Series
+
+ss1 = pd.Series(["Windsor", "Toronto", "Guelph", "Chatham", "Brampton"])
+ss2 = pd.Series([1000, 2000, 3000, 4000, 5000])
+
+df1 = pd.DataFrame({"Col1":ss1, "Col2":ss2})
+print(df1)
