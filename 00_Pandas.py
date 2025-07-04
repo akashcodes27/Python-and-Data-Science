@@ -217,6 +217,7 @@ print(df2)
 
 
 # We can also apply mathematical operations to our dataframes by using apply+lambda 
+# apply+lambda allows us to define our own function for the input provided in the form of: lambda x
 
 df2["Price_after_tax"] = df2["Price"].apply(lambda x: x * 1.10)
 
