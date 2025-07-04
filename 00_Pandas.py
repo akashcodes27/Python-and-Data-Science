@@ -168,6 +168,7 @@ print(df3)
 # print(df3)
 
 
+# ASSIGNING SERIES TO DATAFRAME COLUMN
 # We can also assign Series to DataFrame column 
 # lets say we have 
 
@@ -178,5 +179,15 @@ df3["New Column"] = car_series
 print(df3)
 
 df3["New Column"].fillna(4, inplace=True)
+
+print(df3)
+
+
+
+# ASSIGNING PYTHON LIST TO DATAFRAME COLUMN
+# We can also assign a python list to DataFrame Column
+fuel_economy = pd.Series([9.5, 8.4, 7.6, 10, 12])
+
+df3["Fuel Economy per 100KM"] = fuel_economy   
 
 print(df3)
