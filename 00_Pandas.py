@@ -211,3 +211,13 @@ print(df3)
 # df3 = df3.sample(frac=1)
 randomized_df = df3.sample(frac=1)
 print(randomized_df)
+
+
+print(df2)
+
+
+# We can also apply mathematical operations to our dataframes by using apply+lambda 
+
+df2["Price_after_tax"] = df2["Price"].apply(lambda x: x * 1.10)
+
+print(df2)
