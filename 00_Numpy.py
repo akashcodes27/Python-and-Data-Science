@@ -43,3 +43,8 @@ print(a1)
 
 a2 = np.zeros((3,7))
 print(a2)
+
+
+# Creating an ndarray by specifying start, stop and step(gaps)
+a3 = np.arange(2, 20, 2)
+print(a3)
