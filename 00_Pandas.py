@@ -206,6 +206,8 @@ print(df3)
 # Now lets see how we can change the order of the data. When we clean data to train machine learning models, we should change the order of the data sample to avoid any bias or overfitting. So we randomize the data 
 
 # Now lets randomize the data we have 
+# We can also specify other values in "frac", which allows us to control the amount of data we wish to randomize
 print(df3)
-df3 = df3.sample(frac=1)
-print(df3)
+# df3 = df3.sample(frac=1)
+randomized_df = df3.sample(frac=1)
+print(randomized_df)
