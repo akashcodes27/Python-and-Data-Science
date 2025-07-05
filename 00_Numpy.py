@@ -78,3 +78,14 @@ print(random_arr)
 # REMEMBER
 # arange, random.randint together  (start, stop, step), (start, stop, size)
 # random.random, random.rand together ((rows, cols)), (rows, cols)
+
+
+# Lets now look at the concept of np.random.seed()
+# np.random.seed() also produces random numbers. But it produces random numbers that stay constant.
+# np.random.seed() is not directly used for generating random numbers, it is used more like a header before using other random functions
+
+np.random.seed(0)
+rand_arr = np.random.random((5,5))
+print(rand_arr)
+
+# Now if we print rand_arr, it gives us the same output everytime 
