@@ -68,3 +68,10 @@ print(random_arr)
 # np.arange(start, stop, step): creates 1-D arrays
 # np.random.randint(start, stop, size=(rows, cols)):  creates 2-D arrays with size
 # np.random.random((rows, cols)): creates 2-D arrays within range [0.0, 1.0)
+
+
+
+
+# REMEMBER
+# arange, random.randint together  (start, stop, step), (start, stop, size)
+# random.random, random.rand together ((rows, cols)), (rows, cols)
