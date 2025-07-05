@@ -70,6 +70,9 @@ print(random_arr)
 # np.random.random((rows, cols)): creates 2-D arrays within range [0.0, 1.0)
 
 
+random_arr = np.random.rand(3,3)
+print(random_arr)
+
 
 
 # REMEMBER
