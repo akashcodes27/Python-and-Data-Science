@@ -120,3 +120,20 @@ print(arr1)
 
 arr2 = np.full((5,5), 3)
 print(arr2)
+
+
+
+# Tensors (Numpy arrays with more than 2 dimensions)
+print("Now we are working with tensors")
+arr1 = np.array([[[1,2,3], [4,5,6], [7,8,9]],
+                 [[11,22,33], [44,55,66], [77,88,99]],
+                 [[12,23,34], [45,56,67], [10,20,30]]])
+
+print(arr1)
+
+
+
+
+
+
+
