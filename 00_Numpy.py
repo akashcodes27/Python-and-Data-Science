@@ -117,3 +117,6 @@ np.zeros((3,3))
 
 arr1 = np.full((4,4), 8)
 print(arr1)
+
+arr2 = np.full((5,5), 3)
+print(arr2)
