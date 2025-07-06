@@ -185,3 +185,8 @@ print(arr1[1 , :])  #Retrives row of index = 1 (only row, not column)
 #Sorting Numpy Arrays (vectors)
 arr1 = np.array([9, 12, 4, 20, 8, 3, 30])
 print(np.sort(arr1))
+
+
+arr2 = np.array([[4,3,2,1], [44,33,22,11], [8,7,6,5]])
+print(np.sort(arr2, axis=0))   #Does column sorting (more useful)
+print(np.sort(arr2, axis=1))   #Does row sorting
