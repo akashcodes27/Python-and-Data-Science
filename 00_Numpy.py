@@ -89,3 +89,6 @@ rand_arr = np.random.random((5,5))
 print(rand_arr)
 
 # Now if we print rand_arr, it gives us the same output everytime 
+
+# DOUBT: INDEXING in n-dimensional arrays 
+
