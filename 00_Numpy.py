@@ -107,3 +107,13 @@ py_arr = np.array([1,2,3,4]) * 2
 print(py_arr)
 
 # So whats the difference: We can clearly observe that when we use * operation on python lists, it concatenates. but when we do * operation on python's numpy arrays, it multiples the constant to every value of the array
+
+
+
+# Like how we create arrays of 0s and 1s.
+np.ones((3,3))
+np.zeros((3,3))
+# We can also create arrays of 7s
+
+arr1 = np.full((4,4), 8)
+print(arr1)
