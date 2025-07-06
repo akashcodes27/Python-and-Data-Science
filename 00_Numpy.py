@@ -211,3 +211,10 @@ arr2 = [0, 2, 4]
 print(arr1[arr2])
 # We have defined one numpy array and one list. The numpy array contains all elements, the list contains all the indices
 # We pass the list in the numpy array, and we obtain the elements stored at the indices of the list 
+
+# Applying conditional by using np.where and mask filter
+arr1 = np.array([12,23,34,45,56,67,78,89])
+arr2 = arr1[np.where(arr1 > 23)]
+arr3 = arr1[arr1 > 56]
+print(arr2)
+print(arr3)
