@@ -158,3 +158,15 @@ print(arr4)
 # reshape: it takes existing vector as input and changes its shape(adds rows and columns) to a 2-D array
 # flatten: it takes a multi-dim tensor or matrice as input and converts it into a vector(1-D array)
 # ravel: Does the same thing as flatten, but makes a mutation to exisiting array instead of creating a copy
+
+
+# Transpose of a matrix: What is it? If we have a matrix, existing rows become new columns and existing columns become new rows
+arr1 = np.arange(0, 40, 2)
+print(arr1)
+
+arr2 = arr1.reshape((4,5))
+print(arr2)
+
+# This is the transpose operation on matrix created by applying the reshape function to a 1D vector 
+arr3 = arr2.T 
+print(arr3)
