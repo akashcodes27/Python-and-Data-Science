@@ -202,3 +202,12 @@ print(filtered_arr)
 arr2 = np.array([0,1,2,3,4,5,6,7,8,9])
 new_arr2 = arr2[arr2 % 2 == 0]
 print(new_arr2)
+
+# Fancy Indexing
+print("Lets see fancy indexing")
+arr1 = np.array([11,22,33,44,55,66,77])
+arr2 = [0, 2, 4]
+
+print(arr1[arr2])
+# We have defined one numpy array and one list. The numpy array contains all elements, the list contains all the indices
+# We pass the list in the numpy array, and we obtain the elements stored at the indices of the list 
