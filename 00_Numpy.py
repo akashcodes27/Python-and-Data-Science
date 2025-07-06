@@ -103,6 +103,7 @@ print(py_list)
 
 
 print("lets take a look at python's arrays")
-py_arr = [1,2,3,4] * 2
+py_arr = np.array([1,2,3,4]) * 2
 print(py_arr)
 
+# So whats the difference: We can clearly observe that when we use * operation on python lists, it concatenates. but when we do * operation on python's numpy arrays, it multiples the constant to every value of the array
