@@ -139,3 +139,22 @@ print(arr1.ndim)
 
 
 
+# Some important Numpy array manipulation functions 
+
+arr1 = np.arange(15)
+print(arr1)
+
+
+arr2 = arr1.reshape(3,5)
+print(arr2)
+
+arr3 = arr2.flatten()
+print(arr3)
+
+arr4 = arr2.ravel()
+print(arr4)
+
+# arange: we know what it does, it creates a vector with specified range and step
+# reshape: it takes existing vector as input and changes its shape(adds rows and columns) to a 2-D array
+# flatten: it takes a multi-dim tensor or matrice as input and converts it into a vector(1-D array)
+# ravel: Does the same thing as flatten, but makes a mutation to exisiting array instead of creating a copy
