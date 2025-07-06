@@ -181,3 +181,7 @@ print(arr1)
 print(arr1[2, 3])    #Does normal indexing, row of index 2, column of index 3
 print(arr1[:, 2])   #Lets say we want to retrieve a specific column(not row, not any element, but an entire column)
 print(arr1[1 , :])  #Retrives row of index = 1 (only row, not column)
+
+#Sorting Numpy Arrays (vectors)
+arr1 = np.array([9, 12, 4, 20, 8, 3, 30])
+print(np.sort(arr1))
