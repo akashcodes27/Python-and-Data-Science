@@ -92,3 +92,17 @@ print(rand_arr)
 
 # DOUBT: INDEXING in n-dimensional arrays 
 
+
+
+
+# Difference between Python Lists and Python arrays.
+
+print("Lets take a look at python's lists")
+py_list = [1,2,3,4] * 2
+print(py_list)
+
+
+print("lets take a look at python's arrays")
+py_arr = [1,2,3,4] * 2
+print(py_arr)
+
