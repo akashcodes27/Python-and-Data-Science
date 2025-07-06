@@ -173,3 +173,11 @@ arr1 = np.array([11,22,33,44,55,66,77,88,99])
 print(arr1[2:7])
 print(arr1[-4])
 print(arr1[-2:-5:-1])   #When doing negative slicing, it is necessary to specify the negative step (-1),else by default arrays and lists both consider positive step movements
+
+
+# Slicing and indexing in matrices
+arr1 = np.array([[1,2,3,4], [5,6,7,8], [11,22,33,44]])
+print(arr1)
+print(arr1[2, 3])    #Does normal indexing, row of index 2, column of index 3
+print(arr1[:, 2])   #Lets say we want to retrieve a specific column(not row, not any element, but an entire column)
+print(arr1[1 , :])  #Retrives row of index = 1 (only row, not column)
