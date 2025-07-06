@@ -190,3 +190,15 @@ print(np.sort(arr1))
 arr2 = np.array([[4,3,2,1], [44,33,22,11], [8,7,6,5]])
 print(np.sort(arr2, axis=0))   #Does column sorting (more useful)
 print(np.sort(arr2, axis=1))   #Does row sorting
+
+# Lets see how we can apply filter to a numpy array
+print("Applying Filter")
+arr1 = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+mask = arr1 > 5  
+filtered_arr = arr1[mask]
+print(filtered_arr)
+
+
+arr2 = np.array([0,1,2,3,4,5,6,7,8,9])
+new_arr2 = arr2[arr2 % 2 == 0]
+print(new_arr2)
