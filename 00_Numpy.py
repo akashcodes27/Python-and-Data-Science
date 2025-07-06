@@ -90,10 +90,6 @@ print(rand_arr)
 
 # Now if we print rand_arr, it gives us the same output everytime 
 
-# DOUBT: INDEXING in n-dimensional arrays 
-
-
-
 
 # Difference between Python Lists and Python arrays.
 
@@ -170,3 +166,10 @@ print(arr2)
 # This is the transpose operation on matrix created by applying the reshape function to a 1D vector 
 arr3 = arr2.T 
 print(arr3)
+
+
+# Slicing and indexing in Numpy 
+arr1 = np.array([11,22,33,44,55,66,77,88,99])
+print(arr1[2:7])
+print(arr1[-4])
+print(arr1[-2:-5:-1])   #When doing negative slicing, it is necessary to specify the negative step (-1),else by default arrays and lists both consider positive step movements
