@@ -240,7 +240,7 @@ print(np.where(arrr1<15, False, True))
 # This sets numbers less than 15 to False and numbers greater than or equal to 15 to True
 
 
-# Arithmetic Operations
+# Adding or removing data
 
 # When we perform '+' operation with python lists
 # It concatenates content from both the arrays
@@ -252,13 +252,38 @@ print(l1+l2)
 # When we perform '+' operation with numpy arrays 
 # It does arithmetic addition of same index elements from both arrays
 a1= np.array([1,2,3,4])
-a2 = np.array([1,2,3,4])
+a2 = np.array([5,6,7,8])
 print(a1+a2)
 
+# But lets say we want to achieve concatenation with numpy arrays and not arithmetic addition
+print(np.concatenate((a1, a2)))
+
+a1 = np.array([1,2,3,4,5,6,7,8])
+print(a1.shape)    #Shows number of (columns,)
+a2 = np.random.rand(3,4)
+print(a2)
+print(a2.shape)   #Shows number of (rows, columms)
+
+# Lets compare compatibility of different numpy arrays
+a1 = np.array([1,2,3,4])
+a2 = np.array([1,2,3,4,5,6,7])
+print(a1.shape == a2.shape)  #Returns false as its obvious that their shape is different cuz diff number of cols 
+
+# Lets explore vstack, what does it do?
+a1 = np.array([[1,2,3,4], [5,6,7,8]])
+a2 = np.array([[11,22,33,44]])
+
+print(a1)
+result_arr = np.vstack((a1, a2))
+print(result_arr)
+# As we can observe clearly we have integrated a new row to our 2-dimensional array, before its shape for (2,4), now its shape is (3,4)
+
+# Lets say in this resulting array, we want add a new column
+a3 = np.array([[69], [69], [69]])    #But make sure the new elements we are addin must be provided exactly in the same format of arrays as the arrays were initially created in 
+result_arr = np.hstack((result_arr, a3))
+print(result_arr)
 
 
-
-
-
-
-
+a1 = np.array([1,2,3,4,5,6,7,8])
+new_arr = np.delete(a1, 3)     #Deletes element at specified index and generates the resulting array
+print(new_arr)    
