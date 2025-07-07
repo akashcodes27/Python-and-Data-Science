@@ -240,6 +240,23 @@ print(np.where(arrr1<15, False, True))
 # This sets numbers less than 15 to False and numbers greater than or equal to 15 to True
 
 
+# Arithmetic Operations
+
+# When we perform '+' operation with python lists
+# It concatenates content from both the arrays
+l1 = [1,2,3,4]
+l2 = [1,2,3,4]
+print(l1+l2)
+
+
+# When we perform '+' operation with numpy arrays 
+# It does arithmetic addition of same index elements from both arrays
+a1= np.array([1,2,3,4])
+a2 = np.array([1,2,3,4])
+print(a1+a2)
+
+
+
 
 
 
