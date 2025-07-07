@@ -230,6 +230,14 @@ arr1 = np.array([1,2,3,4,5,6,7,8])
 # Weird and confusing syntax below 
 print(arr1[np.where(arr1>3)])    #when we applying only conditional, this is the syntax
 print(np.where(arr1>3, arr1*2, arr1))  #when we applying conditional as well as Manipulation, this is the syntax
+# What this means, for elements that satisfy arr1>3 : action: arr1*2
+#                  for elements that dont satisfy arr1>3 : action: arr1
+
+# More intuitive example to understand the concept:
+arrr1 = np.random.randint(0, 30, size=(5,7))
+print(arrr1)
+print(np.where(arrr1<15, False, True))
+# This sets numbers less than 15 to False and numbers greater than or equal to 15 to True
 
 
 
