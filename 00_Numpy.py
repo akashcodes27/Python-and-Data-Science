@@ -216,5 +216,24 @@ print(arr1[arr2])
 arr1 = np.array([12,23,34,45,56,67,78,89])
 arr2 = arr1[np.where(arr1 > 23)]
 arr3 = arr1[arr1 > 56]
+print(arr1)
 print(arr2)
 print(arr3)
+# This was like using WHERE clause in SQL
+
+
+
+# Now we will see something similar to using UPDATE, SET, WHERE of SQL 
+# So basically, we will apply Conditional as well as Manipulation 
+print("Conditional and Data Manipulation")
+arr1 = np.array([1,2,3,4,5,6,7,8])
+# Weird and confusing syntax below 
+print(arr1[np.where(arr1>3)])    #when we applying only conditional, this is the syntax
+print(np.where(arr1>3, arr1*2, arr1))  #when we applying conditional as well as Manipulation, this is the syntax
+
+
+
+
+
+
+
