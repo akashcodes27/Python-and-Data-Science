@@ -315,3 +315,5 @@ print(sales_data[:, 1:])  #Like how 1: prints rows from 1 idx to end.  :, 1: pri
 # Lets now calculate Total revenue for each year. We shall do this by doing: using sum() function and performing Column Slicing
 result_arr = np.sum(sales_data[:, 1:], axis=0)  #This gets id of id column
 print(result_arr)
+
+print(np.min(sales_data[:, 1:], axis=0))
