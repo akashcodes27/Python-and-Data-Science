@@ -287,3 +287,17 @@ print(result_arr)
 a1 = np.array([1,2,3,4,5,6,7,8])
 new_arr = np.delete(a1, 3)     #Deletes element at specified index and generates the resulting array
 print(new_arr)    
+
+
+# Advanced Operation with Business Example 
+# [restaurant id, 2021, 2022, 2023, 2024]    Sales of different restaurants in different years 
+sales_data = np.array([
+    [1, 150000, 180000, 220000, 250000],
+    [2, 120000, 140000, 160000, 190000],
+    [3, 200000, 230000, 260000, 300000],
+    [4, 180000, 210000, 240000, 270000],
+    [5, 160000, 185000, 205000, 230000],
+])
+
+print(sales_data)
+print(sales_data.shape)
