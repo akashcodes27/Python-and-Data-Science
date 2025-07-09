@@ -309,3 +309,5 @@ print(sales_data[3])
 print(sales_data[1,3])  # 1 navigates rows, 3 navigates columns and final result is a single value
 print(sales_data[:, 3])   # skips rows, returns a column of values
 print(sales_data[3 , :])   #Same as sales_data[3]
+print(sales_data[:, 1:])  #Like how 1: prints rows from 1 idx to end.  :, 1: prints columns from idx 1 to end
+# Difference? Just flip rows to columns 
