@@ -311,3 +311,7 @@ print(sales_data[:, 3])   # skips rows, returns a column of values
 print(sales_data[3 , :])   #Same as sales_data[3]
 print(sales_data[:, 1:])  #Like how 1: prints rows from 1 idx to end.  :, 1: prints columns from idx 1 to end
 # Difference? Just flip rows to columns 
+
+# Lets now calculate Total revenue for each year. We shall do this by doing: using sum() function and performing Column Slicing
+result_arr = np.sum(sales_data[:, 1:], axis=0)  #This gets id of id column
+print(result_arr)
