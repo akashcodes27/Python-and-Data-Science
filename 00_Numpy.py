@@ -316,4 +316,17 @@ print(sales_data[:, 1:])  #Like how 1: prints rows from 1 idx to end.  :, 1: pri
 result_arr = np.sum(sales_data[:, 1:], axis=0)  #This gets id of id column
 print(result_arr)
 
-print(np.min(sales_data[:, 1:], axis=0))
+print(np.min(sales_data[:, 1:], axis=1))    #When you change axis from 0 to 1, just flip the axis from row to column
+
+# When do we change between rows and columns: Depends on what kind of problem you are solving
+# If lets say rows portray:
+# id ,  Year1  ,  Year2  ,  Year3  ,  Year4
+# And if we want to find restaurant with max revenue from every year 
+
+
+# If lets say columns potray
+# Cafe1
+# Cafe2
+# Cafe3
+# Cafe4
+# And if we want to find max revenue made by every restaurant
