@@ -331,3 +331,19 @@ print(np.min(sales_data[:, 1:], axis=1))    #When you change axis from 0 to 1, j
 # Cafe3
 # Cafe4
 # And if we want to find max revenue made by every restaurant
+
+
+
+sales_data2 = np.array([
+    [0, 100, 200, 300, 400, 500],
+    [1, 10, 20, 30, 40, 50],
+    [2, 11, 22, 33, 44, 55]
+])
+
+result = np.cumsum(sales_data2[:, 1:], axis=1)
+print(result)
+# Does side by side horizontal addition of values excluding the id column
+
+result2 = np.cumsum(sales_data2[:, 1:], axis=0)
+print(result2)
+# Does vertical addition of values excluding the id column
