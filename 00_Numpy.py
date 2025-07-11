@@ -366,3 +366,13 @@ cumsum = np.cumsum(arr1[:, 1:], axis=0)
 
 # Now we shall take the average of each cumsum
 print(np.mean(cumsum, axis=0))
+
+
+# Now lets do some plotting: figure, plot, title, xlabel, ylabel
+# figure contains dimensions
+# plot contains the code for aggregate function
+# title contains the title text we want for the graph
+# xlabel contains text we want for the x-axis
+# ylabel contains the text we want for the y-axis
+
+import matplotlib as plt
