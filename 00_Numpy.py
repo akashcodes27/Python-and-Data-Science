@@ -311,8 +311,10 @@ print(sales_data[:, 3])   # considers all rows, returns a column of values(consi
 print(sales_data[3 , :])   #Same as sales_data[3], navigates to row with index 3, and considers all columns for that specific row
 print(sales_data[:, 1:])  #-> : considers all rows, 1: considers columns from index 1
 
+
+# Now we take a look at some aggregate functions, we can change how we wish to do the aggregation
 # Lets now calculate Total revenue for each year. We shall do this by doing: using sum() function and performing Column Slicing
-result_arr = np.sum(sales_data[:, 1:], axis=0)  #This gets id of id column
+result_arr = np.sum(sales_data[:, 1:], axis=0)  #This gets id of id column, as we dont wanna sum the ids
 print(result_arr)
 
 print(np.min(sales_data[:, 1:], axis=1))    #When you change axis from 0 to 1, just flip the axis from row to column
