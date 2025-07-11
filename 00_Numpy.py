@@ -287,6 +287,7 @@ print(result_arr)
 a1 = np.array([1,2,3,4,5,6,7,8])
 new_arr = np.delete(a1, 3)     #Deletes element at specified index and generates the resulting array
 print(new_arr)    
+# Format for delete function: np.delete(array, index)
 
 
 # Advanced Operation with Business Example 
@@ -347,3 +348,21 @@ print(result)
 result2 = np.cumsum(sales_data2[:, 1:], axis=0)
 print(result2)
 # Does vertical addition of values excluding the id column
+
+# Lets take a simpler example
+arr1 = np.array([
+    [1, 1, 3, 5, 8],
+    [2, 4, 8, 9, 2],
+    [3, 8, 2, 6, 4],
+    [4, 8, 7, 5, 1]
+])
+
+# We took mean or average
+print(np.mean(arr1[: , 1:], axis=0))
+
+# Then we took cumsum(cumulative sum)
+print(np.cumsum(arr1[:, 1:], axis=0))
+cumsum = np.cumsum(arr1[:, 1:], axis=0)
+
+# Now we shall take the average of each cumsum
+print(np.mean(cumsum, axis=0))
