@@ -376,3 +376,11 @@ print(np.mean(cumsum, axis=0))
 # ylabel contains the text we want for the y-axis
 
 import matplotlib as plt
+
+plt.figure(figsize=(10, 6))
+plt.plot(np.mean(cumsum, axis=0))
+plt.title("Average of cumulative values")
+plt.xlabel("X-axis")
+plt.ylabel("y-axis")
+plt.show()
+# I am not sure why its not running, we shall figure it out in matplotlib module, but for now just remember the syntax
