@@ -23,3 +23,6 @@ medical_df.head(3)
 medical_df.info()
 the info() gives me the following information: attribute names, their datatypes, null or not-null constraint, total number of rows
 
+
+medical_df.describe()
+the describe() gives me some basic statistical information about the dataset
