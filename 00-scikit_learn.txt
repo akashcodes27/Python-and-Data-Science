@@ -49,3 +49,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
 import plotly.express as px 
 %matplotlib inline   #this makes sure charts are rederred in code and not in external popup
+
+We will provide some settings to improve default style and font sizes 
+sns.set_style('darkgrid')
+matplotlib.rcParams[font.size] = 14 
+matplotlib.rcParams[figure.figsize] = (10, 6)
+matplotlib.rcParams[figure.facecolor] = #00000000
