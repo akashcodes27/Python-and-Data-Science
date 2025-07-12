@@ -20,4 +20,6 @@ medical_df.head(3)
 
 # So the "charges" column is our output variable(or the variable that we need to predict using a regression model), and all other attributes are going to be used as input variables. We basically use hostorical data to train our model and to find patterns betwee input attributes and the output attribute "charges". We can then use this system to predict charges for new customers.
 
+medical_df.info()
+the info() gives me the following information: attribute names, their datatypes, null or not-null constraint, total number of rows
 
