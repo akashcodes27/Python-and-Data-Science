@@ -398,3 +398,9 @@ print(vecprod)
 # We can also calculate the mathematical dot product
 dotprod = np.dot(vec1, vec2)
 print(dotprod)
+
+# We can also perform certain specific operations on individual items of numpy array. This is possible through the "vectorize" method.
+# Like how in pandas we did df["Make"].str.upper  , and all brand names would become uppercase. These kind of transformations can be achieved in numpy through "vectorize" method 
+arr1 = np.array(["cheetah", "cougar", "tiger", "leopard"])
+vectorized_upper = np.vectorize(str.upper)
+print(vectorized_upper(arr1))
