@@ -392,4 +392,5 @@ vec2 = np.array([9, 8, 7, 6, 5, 4])
 vecsum = vec1 + vec2
 print(vecsum)
 
-# vecprod = vec1 * vec2 #Performs mathematical
+vecprod = vec1 * vec2 #Performs mathematical vector multiplication
+print(vecprod)
