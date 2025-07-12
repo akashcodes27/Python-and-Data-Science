@@ -55,3 +55,16 @@ sns.set_style('darkgrid')
 matplotlib.rcParams[font.size] = 14 
 matplotlib.rcParams[figure.figsize] = (10, 6)
 matplotlib.rcParams[figure.facecolor] = #00000000
+
+
+fig = px.histogram(
+    medical_df,
+    x = 'age',
+    nbins = 47,
+    title = 'Age Distribution Histogram'
+)
+
+fig.update_layout(bargap=0.1)
+fig.show()
+
+
