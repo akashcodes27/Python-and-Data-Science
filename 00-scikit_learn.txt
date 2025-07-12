@@ -18,6 +18,6 @@ successfully imported the dataset
 medical_df = pd.read_csv('medical_insurance.csv')
 medical_df.head(3)
 
-# So the "charges" column is our output variable(or the variable that we need to predict using a regression model), and all other attributes are going to be used as input variables
+# So the "charges" column is our output variable(or the variable that we need to predict using a regression model), and all other attributes are going to be used as input variables. We basically use hostorical data to train our model and to find patterns betwee input attributes and the output attribute "charges". We can then use this system to predict charges for new customers.
 
 
