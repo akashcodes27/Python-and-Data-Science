@@ -14,13 +14,16 @@ urlretrieve(medical_data_url, 'medical_insurance.csv')
 //We used urlretrieve function from the urllib.request module. This function we have used for retrieving csv insurance data. In our case, we have the csv dataset hosted on github. BUT heres a critical mistake that many could make. We cannot directly use the github link for retrieveing data. We need to click on a button that says 'RAW". This opens the link that has this csv file hosted. This is the link that we will be using
 
 
+Remember all these are pandas functions, as are doing exploratory data analysis and manipulation using the pandas library 
+
+
 successfully imported the dataset
 medical_df = pd.read_csv('medical_insurance.csv')
 medical_df.head(3)
 
 # So the "charges" column is our output variable(or the variable that we need to predict using a regression model), and all other attributes are going to be used as input variables. We basically use hostorical data to train our model and to find patterns betwee input attributes and the output attribute "charges". We can then use this system to predict charges for new customers.
 
-medical_df.info()
+medical_df.info()   pandas function
 the info() gives me the following information: attribute names, their datatypes, null or not-null constraint, total number of rows
 Lets understand how the Dtypes look like in scikit learn:
 
@@ -36,3 +39,13 @@ If we observe the static metric 75%, it gives us information that holds true for
 "bmi": 34 (75% of customers have class 1 obesity)
 "children": 2 (75% of customers have 2 children)
 "charges": 16639 (75% of customers spend 16639$ on their medical bills)
+Just like 75%, we can also refer to "mean", 50%, 25%, min, max to draw different inferences 
+
+
+
+Now alongside Exploratory Analysis, lets also do some visualization. For the purpose of visualization, we will use sonme libraries like: Matplotlib, Seaborn, Plotly
+
+import matplotlib.pyplot as plt
+import seaborn as sns 
+import plotly.express as px 
+%matplotlib inline   #this makes sure charts are rederred in code and not in external popup
