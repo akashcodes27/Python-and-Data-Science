@@ -47,7 +47,7 @@ Now alongside Exploratory Analysis, lets also do some visualization. For the pur
 
 import matplotlib.pyplot as plt
 import seaborn as sns 
-import plotly.express as px 
+import plotly.express as px   #plotly is used to make the chart interactive
 %matplotlib inline   #this makes sure charts are rederred in code and not in external popup
 
 We will provide some settings to improve default style and font sizes 
