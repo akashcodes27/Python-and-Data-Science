@@ -394,3 +394,7 @@ print(vecsum)
 
 vecprod = vec1 * vec2 #Performs mathematical vector multiplication
 print(vecprod)
+
+# We can also calculate the mathematical dot product
+dotprod = np.dot(vec1, vec2)
+print(dotprod)
