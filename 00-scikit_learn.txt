@@ -13,4 +13,7 @@ urlretrieve(medical_data_url, 'medical_insurance.csv')
 
 //We used urlretrieve function from the urllib.request module. This function we have used for retrieving csv insurance data. In our case, we have the csv dataset hosted on github. BUT heres a critical mistake that many could make. We cannot directly use the github link for retrieveing data. We need to click on a button that says 'RAW". This opens the link that has this csv file hosted. This is the link that we will be using
 
+medical_df = pd.read_csv('medical_insurance.csv')
+medical_df.head(3)
+
 
