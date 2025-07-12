@@ -375,12 +375,21 @@ print(np.mean(cumsum, axis=0))
 # xlabel contains text we want for the x-axis
 # ylabel contains the text we want for the y-axis
 
-import matplotlib as plt
+# import matplotlib as plt
 
-plt.figure(figsize=(10, 6))
-plt.plot(np.mean(cumsum, axis=0))
-plt.title("Average of cumulative values")
-plt.xlabel("X-axis")
-plt.ylabel("y-axis")
-plt.show()
+# plt.figure(figsize=(10, 6))
+# plt.plot(np.mean(cumsum, axis=0))
+# plt.title("Average of cumulative values")
+# plt.xlabel("X-axis")
+# plt.ylabel("y-axis")
+# plt.show()
 # I am not sure why its not running, we shall figure it out in matplotlib module, but for now just remember the syntax
+
+
+# Lets look at some vector operations 
+vec1 = np.array([1, 2, 3, 4, 5, 6])
+vec2 = np.array([9, 8, 7, 6, 5, 4])
+vecsum = vec1 + vec2
+print(vecsum)
+
+# vecprod = vec1 * vec2 #Performs mathematical
