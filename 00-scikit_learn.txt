@@ -22,7 +22,17 @@ medical_df.head(3)
 
 medical_df.info()
 the info() gives me the following information: attribute names, their datatypes, null or not-null constraint, total number of rows
+Lets understand how the Dtypes look like in scikit learn:
+
 
 
 medical_df.describe()
 the describe() gives me some basic statistical information about the dataset
+describe() is extremely useful as it gives us some information like: mean, std deviation, min, max, 50%, 70%, 25%
+By analyzing these metrics we can make a bunch of inferences like: For eg: Lets consider attribute "age"
+By observing medical_df, we can infer that maximum age of customer is 64 and minimum age of customer is 18 implying people outside this age range cannot register for the insurance 
+If we observe the static metric 75%, it gives us information that holds true for 75% of the data.
+"age": 51  (75% of customers are aged 51)
+"bmi": 34 (75% of customers have class 1 obesity)
+"children": 2 (75% of customers have 2 children)
+"charges": 16639 (75% of customers spend 16639$ on their medical bills)
