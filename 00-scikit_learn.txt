@@ -68,3 +68,14 @@ fig.update_layout(bargap=0.1)
 fig.show()
 
 
+fig = px.histogram(
+    medical_df,
+    x = 'age',
+    color = 'sex',
+    color_discrete_sequence = ['maroon'],
+    nbins = 47,
+    title = 'Age Distribution Histogram'
+)
+
+fig.update_layout(bargap=0.2)
+fig,show()
