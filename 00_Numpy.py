@@ -404,3 +404,10 @@ print(dotprod)
 arr1 = np.array(["cheetah", "cougar", "tiger", "leopard"])
 vectorized_upper = np.vectorize(str.upper)
 print(vectorized_upper(arr1))
+
+
+# Concept of Broadcast: What exactly does it mean?
+# In very simple words: when we perform an arithmetic operation between a vector/matrice and a constant, the arithmetic operation is performed between every element of vector/matrice and constant
+arr1 = np.array([3,4,5,6,7,8])
+arr2 = arr1 * 2
+print(arr2)  #As we can see, 2 has been multiplied with every element of the vector
