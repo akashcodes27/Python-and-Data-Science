@@ -375,7 +375,7 @@ print(np.mean(cumsum, axis=0))
 # xlabel contains text we want for the x-axis
 # ylabel contains the text we want for the y-axis
 
-# import matplotlib as plt
+import matplotlib.pyplot as plt
 
 # plt.figure(figsize=(10, 6))
 # plt.plot(np.mean(cumsum, axis=0))
