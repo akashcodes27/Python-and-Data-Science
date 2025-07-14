@@ -99,3 +99,21 @@ fig1.show()
 # What can we infer from the histogram visualization that we have created below. 
 # Most non-smokers have less charges then smokers
 # Majority of customers are non-smokers and the remaining are smokers 
+# However these inferences are just assumptions. From this data we can infer that, smokers pay higher insurance premiums than non-smokers because of associated health risks. 
+# This graph follows the power law or we can also call it exponential.
+# What does that mean? What it means is that we can see higher numbers for the initial groups of customers and these numbers start to gradually, exponentially decline as we move to the later groups of customers 
+# And according to the power law, usually these initial groups of customers that seem to have the lowest medical charges are represent or constitute the majority. 
+
+
+fig2 = px.histogram(
+    medical_df,
+    x = 'charges',
+    nbins = 100,
+    color = 'region',
+    color_discrete_sequence=['blue', 'green', 'purple', 'orange'],
+    marginal = 'box',
+    title = 'charges distribution between regions'
+)
+
+fig2.update_layout(bargap = 0.3)
+fig2.show()
