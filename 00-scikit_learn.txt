@@ -117,3 +117,8 @@ fig2 = px.histogram(
 
 fig2.update_layout(bargap = 0.3)
 fig2.show()
+
+
+medical_df.region.value_counts()
+medical_df.sex.value_counts()
+medical_df.smoker.value_counts()
