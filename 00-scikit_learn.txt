@@ -72,7 +72,8 @@ fig = px.histogram(
     medical_df,
     x = 'age',
     color = 'sex',
-    color_discrete_sequence = ['maroon'],
+    color_discrete_sequence = ['maroon', 'blue],
+    #here we have the option of providing only a single color which is the default usual behavior, but we can provide 2 colors to then see the difference in distribution for male/female, smoker/smoker, depends on yes/no attribute that we have provided in color attribute 
     nbins = 47,
     title = 'Age Distribution Histogram'
 )
