@@ -131,3 +131,20 @@ px.histogram(
     color_discrete_sequence = ['blue', 'green'],
     title = 'Smoker Distribution'
 )
+
+
+Remember: Whenever we are performing data analysis, exploration, visualization, if we are playing around with sample, it is necessary to ensure that the distributions of the samples match the distribution of the population, as the sample is the representative of the population.
+
+
+
+# Lets visualize the relationship between Age and Sum of charges for smokers and non-smokers of different age groups
+fig3 = px.histogram(
+    medical_df, 
+    x= 'age',
+    y = 'charges',
+    color = 'smoker',
+    title = 'Relationship between age and charges'
+)
+
+fig3.update_layout(bargap = 0.3)
+fig3.show()
