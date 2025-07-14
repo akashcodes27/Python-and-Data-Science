@@ -148,3 +148,10 @@ fig3 = px.histogram(
 
 fig3.update_layout(bargap = 0.3)
 fig3.show()
+
+
+
+# So we can observe that majority of non-smokers have lower insurance charges. Except a small proportion of outliers who may have higher insurance charges
+# due to genetic reasons or chronic illnesses
+# Whereas smokers on an average have higher insurance charges, and ofcourse even smokers have a dedicated proportion of outliers who may have higher
+# insurance charges due to chronic illnesses and genetic reasons
