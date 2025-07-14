@@ -88,9 +88,14 @@ fig1 = px.histogram(
     medical_df,
     x = 'charges',
     nbins = 100,
+    marginal = 'box'   #this also adds a box plot for both smokers and non smokers 
     color = 'smoker',
     color_discrete_sequence = ['red','blue'],
     title = 'charges distribution between smoker and non-smokers'
 )
 fig1.update_layout(bargap=0.3)
 fig1.show()
+
+# What can we infer from the histogram visualization that we have created below. 
+# Most non-smokers have less charges then smokers
+# Majority of customers are non-smokers and the remaining are smokers 
