@@ -122,3 +122,12 @@ fig2.show()
 medical_df.region.value_counts()
 medical_df.sex.value_counts()
 medical_df.smoker.value_counts()
+
+
+px.histogram(
+    medical_df, 
+    x = 'smoker',
+    color = 'sex',
+    color_discrete_sequence = ['blue', 'green'],
+    title = 'Smoker Distribution'
+)
