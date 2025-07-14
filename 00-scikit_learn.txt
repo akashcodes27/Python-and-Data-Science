@@ -80,3 +80,17 @@ fig = px.histogram(
 
 fig.update_layout(bargap=0.2)
 fig,show()
+
+
+
+#Lets look at example 2
+fig1 = px.histogram(
+    medical_df,
+    x = 'charges',
+    nbins = 100,
+    color = 'smoker',
+    color_discrete_sequence = ['red','blue'],
+    title = 'charges distribution between smoker and non-smokers'
+)
+fig1.update_layout(bargap=0.3)
+fig1.show()
