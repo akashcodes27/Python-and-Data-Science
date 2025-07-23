@@ -169,4 +169,7 @@ A2 and c
 A3 and c 
 A4 and c 
 We carefully observed the plots to find if any meaningful visual relationships exist between these pairs of traits 
-Althought histogram and scatterplots dont fully work for all kinds 
+Althought histogram and scatterplots dont fully work for all kinds, so we also use some others like: violin plot(to help us observe the density of these relationships when we deal with discrete variables(and not gradients))
+Like usually in scatterplots with gradient attributes, we can clearly observe density by looking at clusters of scatterpoints
+But when dealing with a pair such as: Children and Charge 
+We wont be able to view density of these plots(like eg: if we have 1000 people having 2 children, then does the majority of these 1000 have high medical charge or low medical charge)
