@@ -186,3 +186,7 @@ lets see the code:
 medical_df.charges.corr(medical_df.age)
 medical_df.charges.corr(medical_df.bmi)
 medical_df.charges.corr(medical_df.children)
+
+But so far we only looked at the numeric attributes, what if we are dealing with categorical attributes 
+
+medical_df.charges.corr(medical_df.smoker.map({'no': 0, 'yes': 1}))
