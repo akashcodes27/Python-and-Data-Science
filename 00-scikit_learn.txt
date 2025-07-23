@@ -155,3 +155,18 @@ fig3.show()
 # due to genetic reasons or chronic illnesses
 # Whereas smokers on an average have higher insurance charges, and ofcourse even smokers have a dedicated proportion of outliers who may have higher
 # insurance charges due to chronic illnesses and genetic reasons
+
+
+
+So far, lets quickly summarize what we looked at: 
+We have X Attributes: A1, A2, A3, A4, A5, A6, A7, A8 (age, sex, BMI, smoker, gender, Children etc)
+We have Y Attribute: C (Charge)
+ 
+
+So far, we plotted: Histogram, Scatter Plot to determine relationships between the following: 
+A1 and c 
+A2 and c 
+A3 and c 
+A4 and c 
+We carefully observed the plots to find if any meaningful visual relationships exist between these pairs of traits 
+Althought histogram and scatterplots dont fully work for all kinds 
