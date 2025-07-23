@@ -190,3 +190,4 @@ medical_df.charges.corr(medical_df.children)
 But so far we only looked at the numeric attributes, what if we are dealing with categorical attributes 
 
 medical_df.charges.corr(medical_df.smoker.map({'no': 0, 'yes': 1}))
+After executing this line in google colab, we could clearly observe that there is a very strong Correlation between Charges attribute and Categorical attribute Smoker 
