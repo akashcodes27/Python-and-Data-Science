@@ -173,3 +173,11 @@ Althought histogram and scatterplots dont fully work for all kinds, so we also u
 Like usually in scatterplots with gradient attributes, we can clearly observe density by looking at clusters of scatterpoints
 But when dealing with a pair such as: Children and Charge 
 We wont be able to view density of these plots(like eg: if we have 1000 people having 2 children, then does the majority of these 1000 have high medical charge or low medical charge)
+
+Lets now understand co-relation
+In simple terms Correlation helps us make relative comparisons between different pairs of attributes to figure out which ones have a stronger relationship. 
+
+Eg: Correlation between BMI and charge is: 0.19
+EG: Correlation between Age and charge is: 0.39 
+We compute this using the (.corr()) function 
+This relative comparison allows to come to a conclusion that relationship between BMI and charge is relatively useless as compared to relationship between Age and Charge 
