@@ -181,3 +181,8 @@ Eg: Correlation between BMI and charge is: 0.19
 EG: Correlation between Age and charge is: 0.39 
 We compute this using the (.corr()) function 
 This relative comparison allows to come to a conclusion that relationship between BMI and charge is relatively useless as compared to relationship between Age and Charge 
+
+lets see the code:
+medical_df.charges.corr(medical_df.age)
+medical_df.charges.corr(medical_df.bmi)
+medical_df.charges.corr(medical_df.children)
