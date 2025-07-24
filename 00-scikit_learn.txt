@@ -192,6 +192,8 @@ But so far we only looked at the numeric attributes, what if we are dealing with
 medical_df.charges.corr(medical_df.smoker.map({'no': 0, 'yes': 1}))
 After executing this line in google colab, we could clearly observe that there is a very strong Correlation between Charges attribute and Categorical attribute Smoker 
 
+medical_df.charges.corr(medical_df.sex.map({'male':1, 'female':0}))
+
 medical_df.charges.corr(medical_df.children)
 
 Correlation Coeficients can be interpreted in 2 ways:
@@ -206,3 +208,5 @@ Strength: The absolute value of the correlation coefficients. Extreme values +1 
 +Ve indicates: When one variable increase, other increases as well 
 -ve indicates: When one increases, other decreases 
 0 indicates points are all over the place with no trend 
+
+
