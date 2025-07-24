@@ -193,3 +193,16 @@ medical_df.charges.corr(medical_df.smoker.map({'no': 0, 'yes': 1}))
 After executing this line in google colab, we could clearly observe that there is a very strong Correlation between Charges attribute and Categorical attribute Smoker 
 
 medical_df.charges.corr(medical_df.children)
+
+Correlation Coeficients can be interpreted in 2 ways:
+1. Strength 
+2. Direction 
+
+Strength: The absolute value of the correlation coefficients. Extreme values +1 and -1 indicate strong +ve or -ve correlation. Closer the value to any of these values +1 or -1, stronger the correlation. 0 indicates, no correlation at all. 
+
+1. A perfectly linear relationship line: value almost +1
+2. A strong linear relationship line: value  closer to 1 but not high enough 
++ve or -ve value also decides the direction of the relationship. 
++Ve indicates: When one variable increase, other increases as well 
+-ve indicates: When one increases, other decreases 
+0 indicates points are all over the place with no trend 
