@@ -216,3 +216,4 @@ Lets do some crazy stuff.
 Lets convert all the YES/NO, MALE/FEMALE cartegorical attributes into 1 and 0
 medical_df['smoker'] = medical_df.smoker.map({'yes':1, 'no':0})
 medical_df['sex'] = medical_df.sex.map({'male':1, 'female':0})
+medical_df.drop('region', axis=1, inplace=True)
