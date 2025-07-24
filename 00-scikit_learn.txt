@@ -210,3 +210,8 @@ Strength: The absolute value of the correlation coefficients. Extreme values +1 
 0 indicates points are all over the place with no trend 
 
 
+
+
+Lets do some crazy stuff.
+Lets convert all the YES/NO, MALE/FEMALE cartegorical attributes into 1 and 0
+medical_df['smoker'] = medical_df.smoker.map({'yes':1, 'no':0})
