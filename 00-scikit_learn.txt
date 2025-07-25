@@ -228,3 +228,6 @@ plt.title('Correlation matrix')
 
 
 I wasnt fully able to grasp the difference between: Correlation and Causation. Try to fully understand the difference between the two. Conclusion: Correlation isn't necessarily related to causation
+
+LINEAR REGRESSION:
+Linear Regression is a fundamental supervised machine learning algorithm that is used to model the relationship between dependent target variable and multiple independent variables(or features) by finding a straight line through the data. It works by finding the Best-Fit Line represented by the equation y = mx + c
