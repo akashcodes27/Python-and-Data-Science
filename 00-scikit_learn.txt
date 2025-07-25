@@ -218,3 +218,9 @@ medical_df['smoker'] = medical_df.smoker.map({'yes':1, 'no':0})
 medical_df['sex'] = medical_df.sex.map({'male':1, 'female':0})
 medical_df.drop('region', axis=1, inplace=True)
 medical_df.corr()
+
+medical_df.corr() prints an entire table of correlations of every attribute with every attribute 
+To better understand and visualize these attributes, we use heatmaps 
+
+sns.heatmap(medical_df, cmap='Reds', annot=True)
+plt.title('Correlation matrix')
