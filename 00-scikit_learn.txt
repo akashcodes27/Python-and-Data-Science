@@ -230,4 +230,6 @@ plt.title('Correlation matrix')
 I wasnt fully able to grasp the difference between: Correlation and Causation. Try to fully understand the difference between the two. Conclusion: Correlation isn't necessarily related to causation
 
 LINEAR REGRESSION:
-Linear Regression is a fundamental supervised machine learning algorithm that is used to model the relationship between dependent target variable and multiple independent variables(or features) by finding a straight line through the data. It works by finding the Best-Fit Line represented by the equation y = mx + c
+Linear Regression is a fundamental supervised machine learning algorithm that is used to model the relationship between dependent target variable and multiple independent variables(or features) by finding a straight line through the data. It works by finding the Best-Fit Line represented by the equation y = mx + c. This line captures the linear trend in the data showing us how the change in the independent variable causes or influences a change in the dependent variable 
+
+So whenever we use a Linear Regression model with any new data, the model tries to analyze and make sense of data to find the best fit line for the data. Once it fully understands how output changes with respect to input, we can then provide the trained model with inputs that it has not previously seen and model can accurately make a prediction based on the historic trend that it identified
