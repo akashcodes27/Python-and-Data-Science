@@ -224,3 +224,7 @@ To better understand and visualize these attributes, we use heatmaps
 
 sns.heatmap(medical_df, cmap='Reds', annot=True)
 plt.title('Correlation matrix')
+
+
+
+I wasnt fully able to grasp the difference between: Correlation and Causation. Try to fully understand the difference between the two. Conclusion: Correlation isn't necessarily related to causation
