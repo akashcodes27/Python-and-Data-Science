@@ -268,7 +268,7 @@ slope = 200
 intercept = 100
 
 
-
+non_smoker_df = medical_df[medical_df['smoker'] == 0]
 
 
 
