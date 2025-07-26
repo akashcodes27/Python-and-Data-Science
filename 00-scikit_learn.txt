@@ -276,3 +276,15 @@ plt.plot(ages, calculated_charges)
 plt.scatter(ages, non_smoker_df.charges)
 
 
+
+Loss/Cost function:
+
+We can compare our model's predictions with the actual targets using the following method: 
+
+RMSE(Root Mean Squared Error)
+We take difference of ACTUAL VALUE and CALCULATED VALUE.
+We square this difference 
+We take Average of this result 
+We take square root of the whole thing 
+This results in formation of a very powerful evaluation metric which we call RMSE(Root Mean Squared Error)
+
