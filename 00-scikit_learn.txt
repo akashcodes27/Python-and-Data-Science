@@ -258,6 +258,15 @@ However we have manually defined the values for m and c (slope and intercept)
 Hence we plot the calculated values to see what kind of fit we have with the predicted line. If we are not satisfied, we can simply alter the values for slope(m ) and intercept(c) to make it align with observed scatterplot trend. 
 
 
+In this case, we are not using a machine learning model. we are instead modeling this linear relationship manually by manualy defining linear equation and slope as well as y-intercept values 
+
+
+def linear_func(slope, intercept, x):
+  return slope * x + intercept 
+
+slope = 200
+intercept = 100
+
 
 
 
