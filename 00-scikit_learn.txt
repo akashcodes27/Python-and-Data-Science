@@ -288,3 +288,5 @@ We take Average of this result
 We take square root of the whole thing 
 This results in formation of a very powerful evaluation metric which we call RMSE(Root Mean Squared Error)
 
+
+Lets understand Root Mean Squared Error
