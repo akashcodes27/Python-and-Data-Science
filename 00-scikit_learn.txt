@@ -249,6 +249,13 @@ We shall now visualize the relationship between both the attributes:
 We can plot scatterplots through 2 ways. (1st: Seaborn, 2nd: Plotly)
 px.scatter(medical_df, x='age', y='charges')
 sns.scatterplot(data=medical_df, x='age', y='charges')
+We observe a linear trend between the two attributes 
+
+So: in the video that we are watching. We can clearly see that we are making use of the "straight line equation" y=mx+c to model correlation between charges and age. 
+The person has manually defined a function that performs y=mx+c and returns the value of 'y'(as it represents estimated charges)
+
+However we have manually defined the values for m and c (slope and intercept)
+Hence we plot the calculated values to see what kind of fit we have with the predicted line. If we are not satisfied, we can simply alter the values for slope(m ) and intercept(c) to make it align with observed scatterplot trend. 
 
 
 
