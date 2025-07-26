@@ -269,6 +269,10 @@ intercept = 100
 
 
 non_smoker_df = medical_df[medical_df['smoker'] == 0]
+calculated_charges = linear_func(slope, intercept, non_smoker_df.age)
+ages = non_smoker_df.age
 
+plt.plot(ages, calculated_charges)
+plt.scatter(ages, non_smoker_df.charges)
 
 
