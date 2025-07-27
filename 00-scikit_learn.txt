@@ -323,4 +323,16 @@ But I feel like many built in models already have these optimizers embedded with
 The below I did not understand , how the first one is a series and second one a dataframe?
 non_smoker_df.age is a series 
 non_smoker_df[['age']] is a dataframe
+
+So basically even though age is just one column, we still treat it like as if it is a 2-dimensional array with one column 
 When we import the LinearRegression model from sklearn.linear_model, to fit the model to the data, we need inputs as dataframe not as series 
+
+
+Here we will feed the model with 2 attributes: 'age' and 'charges' 
+
+inputs = non_smoker_df[['age']]
+targets = non_smoker_df.charges 
+
+model.fit(inputs, targets)
+
+When we import the LinearRegression model from sklearn.linear_model, we are already telling the model to FIND linear or directly proportional relationships between the specified attributes 
