@@ -310,6 +310,10 @@ These 2 methods are used to optimize the weights(Intercept and Slope) to find th
 
 
 
-Ordinary Least Squares: Uses combination of Calculation and Linear Algebra to find the best fit weights w and b (does matrice conversions and inversions)
+Ordinary Least Squares: Uses combination of Calculation and Linear Algebra to find the best fit weights w and b (does matrice conversions and inversions) [Works best for smaller datasets]
 
 Stochastic Gradient Descent: very surface level info: Imagine you are on a hill in dark, you want to go down, you try taking one step down in every direction and once you find the step to take, you continue taking more steps down and this cycle repeats.
+[works best for larger datasets]
+
+My Opinion: I feel like the Linear Regression machine learning models from scikit learn already come with all these features embedded. Right now we manually wrote an algorithm to find the best fit line for finding correlation between 2 attributes. And we are manually calculating weights and also using a manual approach for optimizing weights to minimize the error margin or loss functio value, to accomplish that we are using techniques like Ordinary Least Squares, Stochastic Gradient Descent. 
+But I feel like many built in models already have these optimizers embedded within the algorithm , and possibly all we do is train and tune hyperparameters of the model using tools offered to us by ML libraries 
