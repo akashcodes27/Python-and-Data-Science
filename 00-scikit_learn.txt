@@ -299,5 +299,17 @@ def rmse(targets, calculated_charges):
     np.sqrt(np.mean(np.square(targets - calculated_charges)))
 
 rmse(targets, calculated_charges)
-we got a value of approx 4500. This value tells us that the target deviates from calculated_charges by approx 4500$
+we got a value of approx 4500. This value tells us that the target deviates from calculated_charges by approx Loss Function value of 4500
 To fix this, we would need to play around with the values of Slope and Intercept
+
+
+We Call Slope and Intercept as WEIGHTS. We need a strategy to optimize the weights such that we have a better fit with the actual observations .(To Reduce LOSS and to improve the FIT of the data )
+
+So we have 2 ways to make that happen: Ordinary Least Squares, Stochastic Gradient Descent 
+These 2 methods are used to optimize the weights(Intercept and Slope) to find the Best Fit Line for the correlation between the 2 attributes . What is the role of these optimizers: To minimize the loss by trying to find the best fit line 
+
+
+
+Ordinary Least Squares: Uses combination of Calculation and Linear Algebra to find the best fit weights w and b (does matrice conversions and inversions)
+
+Stochastic Gradient Descent: very surface level info: Imagine you are on a hill in dark, you want to go down, you try taking one step down in every direction and once you find the step to take, you continue taking more steps down and this cycle repeats.
