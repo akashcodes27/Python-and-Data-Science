@@ -317,3 +317,10 @@ Stochastic Gradient Descent: very surface level info: Imagine you are on a hill 
 
 My Opinion: I feel like the Linear Regression machine learning models from scikit learn already come with all these features embedded. Right now we manually wrote an algorithm to find the best fit line for finding correlation between 2 attributes. And we are manually calculating weights and also using a manual approach for optimizing weights to minimize the error margin or loss functio value, to accomplish that we are using techniques like Ordinary Least Squares, Stochastic Gradient Descent. 
 But I feel like many built in models already have these optimizers embedded within the algorithm , and possibly all we do is train and tune hyperparameters of the model using tools offered to us by ML libraries 
+
+
+
+The below I did not understand , how the first one is a series and second one a dataframe?
+non_smoker_df.age is a series 
+non_smoker_df[['age']] is a dataframe
+When we import the LinearRegression model from sklearn.linear_model, to fit the model to the data, we need inputs as dataframe not as series 
