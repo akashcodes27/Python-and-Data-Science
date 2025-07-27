@@ -290,3 +290,14 @@ This results in formation of a very powerful evaluation metric which we call RMS
 
 
 Lets understand Root Mean Squared Error
+RMSE tells how much on average the real values differ from the calculated values. 
+
+targets = non_smoker_df['charges']
+calculated_charges = linear_func(slope, intercept, non_smoker_df.age)
+
+def rmse(targets, calculated_charges):
+    np.sqrt(np.mean(np.square(targets - calculated_charges)))
+
+rmse(targets, calculated_charges)
+we got a value of approx 4500. This value tells us that the target deviates from calculated_charges by approx 4500$
+To fix this, we would need to play around with the values of Slope and Intercept
