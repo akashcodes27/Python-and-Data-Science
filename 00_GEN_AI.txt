@@ -1,8 +1,14 @@
 
 1. ChatGPT is an Application Shell for LLMS: 
 Prompt "What is the meaning of life" ------> AI Application --------> Potential Preprocessing (Filter, format , modify prompt)-------->  LLM (GPT-4o)
-While it sends the user's filtered, formatted, modified prompt to LLM, it also keeps a track of the "Chat History" of the user. 
+While it sends the user's filtered, formatted, modified prompt to LLM, it also keeps a track of the "Chat History" of the user and sends this to LLMS when user sends their prompt.  
 
+-----------------------------------------------------------------------------------------------------------------
+AUGMENTED PROMPTS AND MESSAGES: 
+
+User sends their prompt. ChatGPT(or other applications LLM APIs) may edit, modify or add some info onto the user's prompt before sending it to the model. This is done to control the output of the model, and it controls the output for various reasons. 
+----------------------------------------------------------------------------------------------------------------
+Eg1: System Prompt: When the user sends a prompt to the LLM Application, the Application may embed a message into the chathistory before sending the whole package of prompt + chat history into the LLM. For Eg: A user may send prompts in an angry or harsh manner but the Application may inject some system prompt like: "Always reply in a friendly manner with firendly suggestions without escalating or abusing the user". And hence, every output from the LLM will have a light tone to address the concerns of the users. 
 
 
 Generative AI is a branch of Artificial Intelligence that provides complex deep learning models that generate content that does not already exist but has a very high resemblence with real life data such as audio, video, images, text content. These artificial Intelligence systems are very much different from traditional AI systems which are usually used for solving problems like Classification, Regression, Clustering.
