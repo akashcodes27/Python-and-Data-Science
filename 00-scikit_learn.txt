@@ -337,3 +337,11 @@ model.fit(inputs, targets)
 
 When we import the LinearRegression model from sklearn.linear_model, we are already telling the model to FIND linear or directly proportional relationships between the specified attributes 
 So when we use fit function to train the model, what we so far did manually the model will now do that internally to the data which we have passed to it. Since the model is trained for the purpose of making predictions on the data that it has not previously seen, it needs to internally make use of optimizers and reduce loss function to find a best fit linear line of relationship that passes closely along the data which we have passed
+
+print(inputs.shape)
+print(targets.shape)
+print(inputs.size)
+print(targets.size)
+
+# Size tells us only the number of rows
+# shape tells us the number of rows as well as number of columns

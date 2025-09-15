@@ -1,4 +1,10 @@
 
+1. ChatGPT is an Application Shell for LLMS: 
+Prompt "What is the meaning of life" ------> AI Application --------> Potential Preprocessing (Filter, format , modify prompt)-------->  LLM (GPT-4o)
+While it sends the user's filtered, formatted, modified prompt to LLM, it also keeps a track of the "Chat History" of the user. 
+
+
+
 Generative AI is a branch of Artificial Intelligence that provides complex deep learning models that generate content that does not already exist but has a very high resemblence with real life data such as audio, video, images, text content. These artificial Intelligence systems are very much different from traditional AI systems which are usually used for solving problems like Classification, Regression, Clustering.
 
 4 main categories of GenAI models:
