@@ -7,6 +7,16 @@ While it sends the user's filtered, formatted, modified prompt to LLM, it also k
 AUGMENTED PROMPTS AND MESSAGES: 
 
 User sends their prompt. ChatGPT(or other applications LLM APIs) may edit, modify or add some info onto the user's prompt before sending it to the model. This is done to control the output of the model, and it controls the output for various reasons. 
+
+
+LLMS may also make use of Tools to better fulfill the queries of the user. For eg: If the user asks about some facts or info, the LLM will perform "WEB SEARCH". Hence we can see the LLM whereever needed may also take help of certain tools it has available itselef. 
+
+
+
+RAG (Retrived Augmented Generation): In simple words, it uses text processing and analytics capabilities of an LLM but it injects Private Information from a provided Knowledge Base to inject a context to the prompt to provide personalized solutions to the end users.
+
+
+
 ----------------------------------------------------------------------------------------------------------------
 Eg1: System Prompt: When the user sends a prompt to the LLM Application, the Application may embed a message into the chathistory before sending the whole package of prompt + chat history into the LLM. For Eg: A user may send prompts in an angry or harsh manner but the Application may inject some system prompt like: "Always reply in a friendly manner with firendly suggestions without escalating or abusing the user". And hence, every output from the LLM will have a light tone to address the concerns of the users. 
 
