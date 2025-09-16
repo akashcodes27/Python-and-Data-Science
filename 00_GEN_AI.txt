@@ -6,7 +6,7 @@ While it sends the user's filtered, formatted, modified prompt to LLM, it also k
 -----------------------------------------------------------------------------------------------------------------
 AUGMENTED PROMPTS AND MESSAGES: 
 
-User sends their prompt. ChatGPT(or other applications LLM APIs) may edit, modify or add some info onto the user's prompt before sending it to the model. This is done to control the output of the model, and it controls the output for various reasons. 
+User sends their prompt. ChatGPT(or other applications LLM APIs) may edit, modify or add some info onto the user's prompt before sending it to the model. This is done to control the output of the model, and it controls the output for various reasons. Also apart from injecting a modified "Sytem Prompt", the AI Application also performs a cleaning process to filter illegal or inappropriate words, sentences, unclear text structures before moving forward.
 
 
 LLMS may also make use of Tools to better fulfill the queries of the user. For eg: If the user asks about some facts or info, the LLM will perform "WEB SEARCH". Hence we can see the LLM whereever needed may also take help of certain tools it has available itselef. 
@@ -16,6 +16,18 @@ LLMS may also make use of Tools to better fulfill the queries of the user. For e
 RAG (Retrived Augmented Generation): In simple words, it uses text processing and analytics capabilities of an LLM but it injects Private Information from a provided Knowledge Base to inject a context to the prompt to provide personalized solutions to the end users.
 
 
+Web Applications like ChatGPT are not the only ways to interact with a model. One can also interact by using Ai APIs. APIs however do not have any System Prompts, or any Augmentation mechanims, or any kinds of Filters or Formatting taking place, we can directly inject a raw prompt into the LLM through an API which generates a raw output with nothing in middle to modify, alter, control the output of the LLM. AI APIs can be embedded into custom applications where the application developers get to define any such augmentation rules because in this case we are self-hosting an open-source model. 
+
+
+
+LLMs (Large Language Models) are advanced artificial intelligence models designed to understand and generate human language. They are called “large” because:
+They are trained on huge amounts of text data (books, articles, websites, code, conversations, etc.).
+They have billions (or even trillions) of parameters, which are the internal weights that the model adjusts to “learn” language patterns.
+In simple terms, an LLM is like a very advanced autocomplete system: given some text, it predicts what words (or tokens) are most likely to come next. But because of its massive training and scale, it can write essays, answer questions, solve coding problems, reason through logic, and even hold natural conversations.
+Large Language Model understands the relationship between words, not just subasequent words, but between whole sentences so that it can generate the next word with full awareness of context
+
+LLMs ARE TOKEN PREDICTION MACHINES: 
+Before the data is fed into a model for training, it is not directly fed as "text" but the text used for training is first converted into something known as "Tokens". Tokens are essentially different "chunks" or "parts" of a setence. There may not necessarily be exact mapping of every token for every word, but any small chunks of text can be used as a token, and every token is identified by something known as a "Token ID". Token IDs are basically numbers. 
 
 ----------------------------------------------------------------------------------------------------------------
 Eg1: System Prompt: When the user sends a prompt to the LLM Application, the Application may embed a message into the chathistory before sending the whole package of prompt + chat history into the LLM. For Eg: A user may send prompts in an angry or harsh manner but the Application may inject some system prompt like: "Always reply in a friendly manner with firendly suggestions without escalating or abusing the user". And hence, every output from the LLM will have a light tone to address the concerns of the users. 
